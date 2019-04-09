@@ -9,14 +9,14 @@
 <body>
 
   <header class="page-header container">
-    <a class="page-header__logo-link">
+    <a class="page-header__logo-link" href="index.html">
       <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин товаров ручной работы Мишка">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list menu-list">
         <li>
-          <a class="menu-list__item" href="catalog.html">Каталог товаров</a>
+          <a class="menu-list__item">Каталог товаров</a>
         </li>
         <li>
           <a class="menu-list__item" href="form.html">Вязание на заказ</a>
@@ -53,7 +53,7 @@
           </a>
           <p class="card-product__params">Рост 30см, вес 200 г</p>
           <p class="card-product__price">1 200 руб.</p>
-          <a class="card-product__in-cart js-in-cart"></a>
+          <a class="card-product__in-cart js-in-cart"><span class="visually-hidden">Положить в корзину</span></a>
         </li>
         <li class="products-list__item card-product">
           <a href="#"><img class="card-product__image" src="img/product2.jpg" width="260" height="195" alt="товар зайчик-попрыгайчик"></a>
@@ -78,10 +78,11 @@
     <section class="manufacturing">
       <h2 class="manufacturing__heading">Процесс производства</h2>
       <video width="260" height="150" poster="img/posterimage.jpg">
-        <source src="" type='video/ogg; codecs="theora, vorbis"'>
-        <source src="" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-        <source src="" type='video/webm; codecs="vp8, vorbis"'>
+        <source src="#" type='video/ogg; codecs="theora, vorbis"'>
+        <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <source src="#" type='video/webm; codecs="vp8, vorbis"'>
       </video>
+      <button class="manufacturing__play video-play" type="button" name="play"><span class="visually-hidden">Просмотреть видео</span></button>
       <p class="manufacturing__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
       <a class="manufacturing__checkout button" href="#">Сделать заказ</a>
     </section>
@@ -92,26 +93,31 @@
       <li><a class="social-list__item social-list__item--fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
       <li><a class="social-list__item social-list__item--tt" href="#"><span class="visually-hidden">Твиттер</span></a></li>
     </ul>
-    <p class="page-footer__developer">Разработано</p>
+    <p class="page-footer__developer-name">Разработано</p>
+    <img class="page-footer__developer-logo" src="img/htmlacademy.svg" alt="Логотип разработчика html Академия">
   </footer>
   <section class="modal-in-cart modal">
     <h2 class="modal-in-cart__heading">Добавить в корзину</h2>
-    <p class="modal-in-cart__choice"></p>
     <form class="modal-in-cart__form choice-size" method="post" action="https://echo.htmlacademy.ru">
-      <ul class="choice-size__list">
-        <li class="choice-size__item">
-          <input class="choice-size-input visually-hidden" id="size-s" type="radio" name="size" value="S" checked>
-          <label class="choice-size-label" for="size-s">S</label>
-        </li>
-        <li class="choice-size__item">
-          <input class="choice-size-input visually-hidden" id="size-m" type="radio" name="size" value="M" checked>
-          <label class="choice-size-label" for="size-m">M</label>
-        </li>
-        <li class="choice-size__item">
-          <input class="choice-size-input visually-hidden" id="size-l" type="radio" name="size" value="L" checked>
-          <label class="choice-size-label" for="size-l">L</label>
-        </li>
-      </ul>
+      <fieldset class="choice-size__group">
+        <legend class="choice-size__description">Выберите размер:</legend>
+        <ul class="choice-size__list">
+          <li class="choice-size__item">
+            <input class="visually-hidden" id="size-s" type="radio" name="size" value="S" checked>
+            <label class="choice-size__label button" for="size-s">S</label>
+          </li>
+          <li class="choice-size__item">
+            <input class="visually-hidden" id="size-m" type="radio" name="size" value="M">
+            <label class="choice-size__label button" for="size-m">M</label>
+          </li>
+          <li class="choice-size__item">
+            <input class="visually-hidden" id="size-l" type="radio" name="size" value="L">
+            <label class="choice-size__label button" for="size-l">L</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="choice-size__button button" type="submit">Добавить</button>
+
     </form>
   </section>
 </body>
