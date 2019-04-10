@@ -21,7 +21,7 @@
           <a class="menu-list__item" href="catalog.html">Каталог товаров</a>
         </li>
         <li>
-          <a class="menu-list__item" href="form.html">Вязание на заказ</a>
+          <a class="menu-list__item">Вязание на заказ</a>
         </li>
       </ul>
       <ul class="main-nav__list user-list">
@@ -44,23 +44,22 @@
     <p class="main-nav__delivery">Бесплатная доставка по России</p>
   </header>
   <main>
-    <h1 class="visually-hidden">Страница заказа вязаных вещей</h1>
-    <section class="knitting">
-      <h2 class="knitting__heading heading">Вязание на заказ</h2>
-      <p class="knitting__description">
+    <h1 class="page-heading">Вязание на заказ</h1>
+    <section class="service-order">
+      <p class="service-order__description">
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
-      <form class="knitting__form order-form" method="post" action="https://echo.htmlacademy.ru">
+      <form class="service-order__form order-form" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="order-form__group">
           <legend class="order-form__group-name">Тип</legend>
           <ul class="order-form__list">
             <li class="order-form__item">
               <input class="visually-hidden" id="type-interior" type="radio" name="type" value="for-interior" checked>
-              <label class="order-form__label order-form__label--type" for="type-interior">Аксессуар для интерьера</label>
+              <label class="order-form__label order-form__label--radio" for="type-interior">Аксессуар для интерьера</label>
             </li>
             <li>
               <input class="visually-hidden" id="type-toy" type="radio" name="type" value="toy">
-              <label class="order-form__label order-form__label--type" for="type-toy">Детская игрушка</label>
+              <label class="order-form__label order-form__label--radio" for="type-toy">Детская игрушка</label>
             </li>
           </ul>
         </fieldset>
@@ -69,27 +68,27 @@
           <ul class="order-form__list">
             <li>
               <input class="visually-hidden" id="color-white" type="checkbox" name="color" value="white" checked>
-              <label class="order-form__label order-form__label--color" for="color-white">Белый</label>
+              <label class="order-form__label order-form__label--checkbox" for="color-white">Белый</label>
             </li>
             <li>
               <input class="visually-hidden" id="color-gray" type="checkbox" name="color" value="gray" checked>
-              <label class="order-form__label order-form__label--color" for="color-gray">Серый</label>
+              <label class="order-form__label order-form__label--checkbox" for="color-gray">Серый</label>
             </li>
             <li>
               <input class="visually-hidden" id="color-tiffany" type="checkbox" name="color" value="tiffany">
-              <label class="order-form__label order-form__label--color" for="color-tiffany">«Тиффани»</label>
+              <label class="order-form__label order-form__label--checkbox" for="color-tiffany">«Тиффани»</label>
             </li>
             <li>
               <input class="visually-hidden" id="color-black" type="checkbox" name="color" value="black">
-              <label class="order-form__label order-form__label--color" for="color-black">Черный</label>
+              <label class="order-form__label order-form__label--checkbox" for="color-black">Черный</label>
             </li>
             <li>
               <input class="visually-hidden" id="color-pink" type="checkbox" name="color" value="pink">
-              <label class="order-form__label order-form__label--color" for="color-pink">Розовый</label>
+              <label class="order-form__label order-form__label--checkbox" for="color-pink">Розовый</label>
             </li>
             <li>
               <input class="visually-hidden" id="color-orange" type="checkbox" name="color" value="orange">
-              <label class="order-form__label order-form__label--color" for="color-orange">Оранжевый</label>
+              <label class="order-form__label order-form__label--checkbox" for="color-orange">Оранжевый</label>
             </li>
           </ul>
         </fieldset>
@@ -111,15 +110,20 @@
           </ul>
         </fieldset>
         <fieldset class="order-form__group">
-          <legend class="order-form__group-name">Тел</legend>
-          <input class="order-form__person-input order-form__person-input--phone" type="text" name="phone" placeholder="+7 XXX XXX XX XX">
+          <legend class="visually-hidden">Ваши контакты</legend>
+          <ul class="order-form__list">
+            <li>
+              <label class="order-form__group-name" for="phone-field">Тел</label>
+              <input class="order-form__person-input order-form__person-input--phone" id="phone-field" type="text" name="phone" placeholder="+7 XXX XXX XX XX">
+            </li>
+            <li>
+              <label class="order-form__group-name" for="email-field">E-mail</label>
+              <input class="order-form__person-input order-form__person-input--email" id="email-field" type="text" name="email" placeholder="Ваш Email*" required>
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="order-form__group">
-          <legend class="order-form__group-name">E-mail</legend>
-          <input class="order-form__person-input order-form__person-input--email" type="text" name="email" placeholder="Ваш Email*" required>
-        </fieldset>
-        <fieldset class="order-form__group">
-          <legend class="order-form__group-name">Доп</legend>
+          <label class="order-form__group-name">Доп</label>
           <textarea class="order-form__addition" name="addition" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
         <p class="order-form__description">*Поля обязательны для заполнения</p>
