@@ -1,0 +1,38 @@
+.feedback {
+  margin-bottom: 42px;
+  padding-bottom: 51px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-position: bottom;
+  background-repeat: repeat-x;
+}
+
+.feedback__heading {
+  margin-bottom: 35px;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.feedback__description {
+  margin: 0 0 35px;
+  color: #444444;
+}
+
+.feedback__name {
+  margin: 0 0 15px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.feedback__instagram {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 35px;
+}
+
+.feedback__next,
+.feedback__prev {
+  width: 125px;
+  height: 50px;
+  margin-bottom: 38px;
+}
