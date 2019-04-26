@@ -1,68 +1,19 @@
 @font-face {
-  font-family: "OpenSans";
-  font-weight: 400;
   font-style: normal;
+  font-weight: 400;
+  font-family: "OpenSans";
   src: local("OpenSans"), url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
 }
+
 @font-face {
-  font-family: "OpenSans";
-  font-weight: 700;
   font-style: normal;
+  font-weight: 700;
+  font-family: "OpenSans";
   src: local("OpenSans"), url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
 }
 
-html {
-  min-width: 320px;
-}
-
-body {
-  margin: 0;
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.container {
-  box-sizing: border-box;
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.button {
-  display: block;
-  box-sizing: border-box;
-  width: 260px;
-  padding: 14px;
-  border: 2px solid #444444;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  color: #444444;
-}
+@import "global.scss";
+@import "blocks/button.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/menu-list.scss";
@@ -70,11 +21,17 @@ img {
 @import "blocks/sale-list.scss";
 @import "blocks/promo.scss";
 @import "blocks/week-product.scss";
+@import "blocks/product-params.scss";
 @import "blocks/about.scss";
+@import "blocks/feature-list.scss";
 @import "blocks/feedback.scss";
 @import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/social-list.scss";
 @import "blocks/modal-in-cart.scss";
+@import "blocks/choice-size.scss";
 @import "blocks/catalog.scss";
 @import "blocks/page-heading.scss";
 @import "blocks/manufacturing.scss";
+@import "blocks/video-play.scss";
+@import "helpers.scss";

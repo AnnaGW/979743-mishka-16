@@ -2,8 +2,8 @@
   margin-bottom: 42px;
   padding-bottom: 51px;
   background-image: url("../img/bg-zigzag-line.svg");
-  background-position: bottom;
   background-repeat: repeat-x;
+  background-position: bottom;
 }
 
 .feedback__heading {
@@ -19,15 +19,15 @@
 
 .feedback__name {
   margin: 0 0 15px;
+  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  font-weight: 700;
 }
 
 .feedback__instagram {
   display: block;
-  font-size: 17px;
   margin-bottom: 35px;
+  font-size: 17px;
 }
 
 .feedback__next,

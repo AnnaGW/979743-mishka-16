@@ -1,4 +1,5 @@
 .manufacturing {
+  position: relative;
   margin-bottom: 58px;
 }
 
@@ -10,13 +11,9 @@
 .manufacturing__heading {
   margin: 0 0 25px;
   padding-left: 90px;
+  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  font-weight: 700;
-}
-
-.manufacturing {
-  position: relative;
 }
 
 .manufacturing__play {
@@ -25,22 +22,14 @@
   left: 108px;
 }
 
-.video-play {
-  width: 101px;
-  height: 77px;
-  border: none;
-  background-color: transparent;
-  background-image: url("../img/icon-play.svg");
-}
-
 .manufacturing video {
   margin-bottom: 32px;
 }
 
 .manufacturing__description {
   margin: 0 0 30px;
-  padding-left: 6px;
   padding-right: 35px;
+  padding-left: 6px;
 }
 
 .manufacturing__checkout {

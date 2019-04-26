@@ -1,0 +1,37 @@
+.choice-size__group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.choice-size__description {
+  margin-bottom: 25px;
+  text-align: center;
+  border: none;
+}
+
+.choice-size__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 31px;
+  padding: 0;
+  list-style: none;
+}
+
+.choice-size__label {
+  width: 82px;
+  border-color: #ececec;
+}
+
+
+[type="radio"]:checked + .choice-size__label {
+  border-color: #63d1bb;
+}
+
+.choice-size__button {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+  background-color: #63d1bb;
+  border-color: #63d1bb;
+}

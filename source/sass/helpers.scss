@@ -1,0 +1,17 @@
+.container {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}

@@ -3,9 +3,9 @@
 }
 
 .products-list {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .card-product {
@@ -22,18 +22,18 @@
   padding-top: 32px;
   padding-bottom: 21px;
   padding-left: 28px;
+  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  font-weight: 700;
 }
 
 .card-product__params {
   margin: 0 28px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #ececec;
   font-size: 13px;
   line-height: 30px;
   color: #444444;
+  border-bottom: 1px solid #ececec;
 }
 
 .card-product-wrapper {
@@ -46,9 +46,9 @@
   width: 102px;
   margin: 0;
   padding: 24px 0;
+  font-weight: 700;
   font-size: 15px;
   line-height: 24px;
-  font-weight: 700;
 }
 
 .card-product__in-cart {

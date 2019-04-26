@@ -5,48 +5,47 @@
 
 .contacts__heading {
   margin: 0 0 40px;
-  font-size: 18px;
   font-weight: 700;
+  font-size: 18px;
 }
 
 .contacts__data {
-  margin: 0 0 72px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   color: #444444;
 }
 
 .contacts__name {
-  display: inline-block;
-  width: 76px;
+  width: 75px;
   margin: 0;
 }
 
 .contacts__address,
 .contacts__email {
   display: inline-block;
-  width: 181px;
-  margin-left: -3px;
+  width: 180px;
+  margin: 0;
 }
 
-.contacts iframe {
-  display: block;
+.contacts__map-external {
   position: relative;
   z-index: 2;
-  border: none;
+  display: block;
   margin: 0 auto;
+  border: none;
 }
 
-.contacts p {
+.contacts__map-mobile {
   position: absolute;
-  top: calc(190px + 74px);
+  display: block;
+  top: 190px + 40px;
   left: 50%;
   z-index: 1;
   margin: 0 0 0 -160px;
   background-color: #b8dcfe;
-}
-
-.contacts img {
-  display: block;
 }
 
 .contacts__write-us {
