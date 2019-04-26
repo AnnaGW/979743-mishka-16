@@ -1,6 +1,6 @@
 .contacts {
   position: relative;
-  margin-bottom: 39px;
+  margin-bottom: 40px;
 }
 
 .contacts__heading {
@@ -40,10 +40,10 @@
 
 .contacts__map-mobile {
   position: absolute;
-  display: block;
   top: 190px + 40px;
   left: 50%;
   z-index: 1;
+  display: block;
   margin: 0 0 0 -160px;
   background-color: #b8dcfe;
 }
