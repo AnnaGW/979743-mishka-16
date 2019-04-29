@@ -7,6 +7,18 @@ var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var editorconfig = require("gulp-lintspaces");
+var stylelint = require("gulp-stylelint");
+
+gulp.task("html", function () {
+  return gulp.src("source/**/*.html")
+    .pipe(plumber())
+    .pipe(editorconfig({
+      editorconfig: ".editorconfig"
+    }))
+    .pipe(editorconfig.reporter())
+    .pipe(server.stream());
+});
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -21,6 +33,21 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("css:lint", function () {
+  return gulp.src("source/sass/**/*.scss")
+    .pipe(plumber())
+    .pipe(editorconfig({
+      editorconfig: ".editorconfig"
+    }))
+    .pipe(editorconfig.reporter())
+    .pipe(stylelint({
+      reporters: [{
+        console: true,
+        formatter: "string"
+      }]
+    }));
+});
+
 gulp.task("server", function () {
   server.init({
     server: "source/",
@@ -30,8 +57,8 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css:lint", "css"));
+  gulp.watch("source/*.html", gulp.series("html"));
 });
 
-gulp.task("start", gulp.series("css", "server"));
+gulp.task("start", gulp.series("html", "css", "css:lint", "server"));

@@ -1,0 +1,26 @@
+.main-nav {
+  position: relative;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -47px;
+  right: 1px;
+  display: block;
+  width: 20px;
+  height: 14px;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.main-nav__list li {
+  border-top: 1px solid #ececec;
+}

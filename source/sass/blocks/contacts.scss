@@ -1,0 +1,52 @@
+.contacts {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.contacts__heading {
+  margin: 0 0 40px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.contacts__data {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  color: #444444;
+}
+
+.contacts__name {
+  width: 75px;
+  margin: 0;
+}
+
+.contacts__address,
+.contacts__email {
+  width: 180px;
+  margin: 0;
+}
+
+.contacts__map-external {
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+
+.contacts__map-mobile {
+  position: absolute;
+  top: 190px + 40px;
+  left: 50%;
+  z-index: 1;
+  display: block;
+  margin: 0 0 0 -160px;
+  background-color: #b8dcfe;
+}
+
+.contacts__write-us {
+  margin: 39px auto;
+}

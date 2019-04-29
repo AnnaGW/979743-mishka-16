@@ -1,0 +1,29 @@
+.page-footer {
+  padding: 0 30px;
+  background-color: #f1f1f1;
+}
+
+.page-footer__list {
+  margin: 0 auto;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.page-footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 39px;
+}
+
+.page-footer__developer {
+  width: 156px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 19px;
+}
+
+.page-footer__developer-logo {
+  width: 34px;
+  height: 34px;
+}
