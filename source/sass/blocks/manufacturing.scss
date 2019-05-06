@@ -1,6 +1,10 @@
 .manufacturing {
   position: relative;
   margin-bottom: 58px;
+
+  video {
+    margin-bottom: 32px;
+  }
 }
 
 .manufacturing__wrapper {
@@ -22,19 +26,14 @@
   left: 108px;
 }
 
-.manufacturing video {
-  margin-bottom: 32px;
-}
-
 .manufacturing__description {
   margin: 0 0 30px;
-  padding-right: 35px;
-  padding-left: 6px;
+  padding: 0 34px;
 }
 
 .manufacturing__checkout {
   width: 192px;
-  margin-left: 6px;
+  margin: 0 auto;
   font-size: 17px;
   line-height: 17px;
 }

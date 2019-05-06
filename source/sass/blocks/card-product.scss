@@ -30,6 +30,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 28px;
+  margin-right: 0;
 }
 
 .card-product__price {
@@ -46,5 +47,5 @@
   height: 72px;
   background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
-  background-position: 100% 50%;
+  background-position: right 28px top 50%;
 }
