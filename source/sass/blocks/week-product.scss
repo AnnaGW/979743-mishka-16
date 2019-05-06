@@ -1,5 +1,4 @@
 .week-product {
-  /*padding-top: 30px;*/
   padding-bottom: 42px;
   font-size: 15px;
   line-height: 24px;
@@ -42,10 +41,10 @@
   margin: 28px 0;
   font-weight: 700;
   font-size: 17px;
-}
 
-.week-product__price--param {
-  text-align: right;
+  &--param {
+    text-align: right;
+  }
 }
 
 .week-product__checkout {

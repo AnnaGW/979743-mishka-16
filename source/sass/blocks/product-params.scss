@@ -10,22 +10,22 @@
   padding: 10px 0;
   line-height: 20px;
   border-bottom: 1px solid #ececec;
-}
 
-.product-params__cell--param {
-  width: 97px;
-}
+  &--param {
+    width: 97px;
+  }
 
-.product-params__cell--value {
-  width: 160px;
-  margin-left: -3px;
+  &--value {
+    width: 160px;
+    margin-left: -3px;
+  }
 }
 
 .product-params__image {
   margin: 28px 0 0;
   padding: 0;
-}
 
-.product-params__image img {
-  display: block;
+  img {
+    display: block;
+  }
 }
