@@ -1,5 +1,56 @@
 .user-list__item {
   display: block;
-  padding: 27px 30px 27px 30px + 46px;
+  width: 260px - 45px;
+  margin: 0 auto;
+  padding: 27px 30px 27px 30px + 45px;
   text-align: left;
+
+  &--search {
+    background-image: url("../img/icon-search.svg");
+    background-repeat: no-repeat;
+    background-position: 30px 50%;
+  }
+
+  &--cart {
+    background-image: url("../img/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-position: 30px 50%;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .user-list {
+
+    /*background-color: rgba(130, 231, 165, 0.3);*/
+  }
+
+  .user-list__item {
+    padding-right: 0;
+    text-align: right;
+    border-left: 1px solid #ececec;
+
+    &--search {
+      width: 82px;
+      height: 88px;
+      padding: 0;
+      font-size: 0;
+      background-position: 50% 50%;
+    }
+
+    &--cart {
+      width: 212px;
+      padding: 32px 0;
+      padding-left: 52px;
+    }
+  }
+
+  .user-list li:first-child {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .user-list {
+    max-width: 50%;
+  }
 }

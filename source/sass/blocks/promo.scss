@@ -43,3 +43,9 @@
 .promo__list li:nth-child(even) {
   background-color: #56c3b2;
 }
+
+@media screen and (min-width: $tablet-width) {
+  .promo {
+    border-top: 1px solid #f9f9f9;
+  }
+}

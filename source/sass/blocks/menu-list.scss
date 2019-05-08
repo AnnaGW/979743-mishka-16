@@ -2,3 +2,37 @@
   display: block;
   padding: 27px 30px;
 }
+
+@media screen and (min-width: $tablet-width) {
+  .menu-list {
+    order: 2;
+    font-size: 15px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e7e7e7;
+  }
+
+  .menu-list__item {
+    width: 167px;
+    padding: 20px 0;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .menu-list {
+    order: 0;
+    max-width: 50%;
+    font-size: 17px;
+    background-color: transparent;
+  }
+
+  .menu-list__item {
+    padding: 32px 34px;
+    border-left: 1px solid #ececec;
+
+    &--first {
+      padding-left: 0;
+      border: none;
+    }
+  }
+}

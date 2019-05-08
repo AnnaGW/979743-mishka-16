@@ -24,3 +24,30 @@
     border-top: 1px solid #ececec;
   }
 }
+
+@media screen and (min-width: $tablet-width) {
+  .main-nav {
+    width: 100%;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 50px;
+
+    li {
+      border-top: none;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .main-nav {
+    display: block;
+  }
+
+  .main-nav__list {
+    padding: 0;
+  }
+}

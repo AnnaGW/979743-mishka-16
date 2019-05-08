@@ -1,4 +1,15 @@
+.sale-list {
+  width: 1050px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
 .sale-list__item {
   display: block;
-  padding: 30px;
+  padding: 20px 30px;
+  font-size: 15px;
+
+  &--first {
+    padding-left: 0;
+  }
 }

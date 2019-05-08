@@ -10,39 +10,49 @@
 <body>
 
   <header class="page-header">
-    <a class="page-header__logo-link" href="index.html">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин товаров ручной работы Мишка">
-    </a>
+    <div class="container">
+      <a class="page-header__logo-link" href="index.html">
+        <img class="page-header__logo-image page-header__logo-image--mobile" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин товаров ручной работы Мишка">
+        <img class="page-header__logo-image page-header__logo-image--tablet" src="img/logo-tablet.svg" width="113" height="46" alt="Магазин товаров ручной работы Мишка">
+        <img class="page-header__logo-image page-header__logo-image--desktop" src="img/logo-desktop.svg" width="149" height="62" alt="Магазин товаров ручной работы Мишка">
+      </a>
+    </div>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="main-nav__list menu-list">
+      <div class="desktop-container">
+        <ul class="main-nav__list menu-list">
+          <li>
+            <a class="menu-list__item menu-list__item--first" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li>
+            <a class="menu-list__item">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
         <li>
-          <a class="menu-list__item" href="catalog.html">Каталог товаров</a>
+          <a class="user-list__item user-list__item--search hidden-for-tablet-desktop" href="#">Поиск по сайту</a>
         </li>
         <li>
-          <a class="menu-list__item">Вязание на заказ</a>
+          <a class="user-list__item user-list__item--cart" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
-      <ul class="main-nav__list user-list">
+      </div>
+      <div class="desktop-container-bottom">
+        <ul class="main-nav__list sale-list hidden-for-mobile-tablet">
         <li>
-          <a class="user-list__item user-list--search" href="#">Поиск по сайту</a>
-        </li>
-        <li>
-          <a class="user-list__item user-list--cart" href="#">Корзина: пока пуста</a>
-        </li>
-      </ul>
-      <ul class="main-nav__list sale-list hidden-for-mobile">
-        <li>
-          <a class="sale-list__item" href="#">Новые поступления</a>
+          <a class="sale-list__item sale-list__item--first" href="#">Новые поступления</a>
         </li>
         <li>
           <a class="sale-list__item" href="#">Распродажа</a>
         </li>
       </ul>
+      </div>
     </nav>
-    <p class="main-nav__delivery hidden-for-mobile">Бесплатная доставка по России</p>
+    <div class="desktop-container">
+      <p class="page-header__delivery hidden-for-mobile">Бесплатная доставка по России</p>
+    </div>
   </header>
   <main>
     <h1 class="page-heading">Вязание на заказ</h1>
