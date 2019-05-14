@@ -13,6 +13,14 @@
   clip: rect(0 0 0 0);
 }
 
+.js-hidden {
+  display: none;
+}
+
+.js-show {
+  display: block;
+}
+
 @media screen and (max-width: $tablet-width) {
   .hidden-for-mobile {
     position: absolute;
@@ -43,29 +51,11 @@
   .container {
     padding: 0 50px;
   }
-
-  .desktop-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 
 @media screen and (min-width: $desktop-width) {
   .container {
     width: 1050px;
     margin: 0 auto;
-  }
-
-  .desktop-container {
-    position: relative;
-    width: 1050px;
-    margin: 0 auto;
-    padding: 0 50px;
-  }
-
-  .desktop-container-bottom {
-    width: 100%;
-    background-color: #f9f9f9;
-    border-top: 1px solid #e7e7e7;
   }
 }

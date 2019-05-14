@@ -10,37 +10,31 @@
 <body>
 
   <header class="page-header">
-    <div class="container">
-      <a class="page-header__logo-link">
-        <img class="page-header__logo-image page-header__logo-image--mobile" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин товаров ручной работы Мишка">
-        <img class="page-header__logo-image page-header__logo-image--tablet" src="img/logo-tablet.svg" width="113" height="46" alt="Магазин товаров ручной работы Мишка">
-        <img class="page-header__logo-image page-header__logo-image--desktop" src="img/logo-desktop.svg" width="149" height="62" alt="Магазин товаров ручной работы Мишка">
+
+    <button class="page-header__toggle js-hidden" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <nav class="main-nav js-show">
+      <a class="main-nav__logo-link">
+        <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин товаров ручной работы Мишка">
       </a>
-    </div>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="desktop-container">
-        <ul class="main-nav__list menu-list">
-          <li>
-            <a class="menu-list__item menu-list__item--first" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li>
-            <a class="menu-list__item" href="form.html">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list user-list">
+      <ul class="main-nav__list menu-list">
         <li>
-          <a class="user-list__item user-list__item--search hidden-for-tablet-desktop" href="#">Поиск по сайту</a>
+          <a class="menu-list__item menu-list__item--first" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li>
+          <a class="menu-list__item" href="form.html">Вязание на заказ</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list user-list">
+        <li>
+          <a class="user-list__item user-list__item--search" href="#">Поиск по сайту</a>
         </li>
         <li>
           <a class="user-list__item user-list__item--cart" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
-      </div>
-      <div class="desktop-container-bottom">
-        <ul class="main-nav__list sale-list hidden-for-mobile-tablet">
+      <ul class="main-nav__list sale-list hidden-for-mobile-tablet">
         <li>
           <a class="sale-list__item sale-list__item--first" href="#">Новые поступления</a>
         </li>
@@ -48,30 +42,26 @@
           <a class="sale-list__item" href="#">Распродажа</a>
         </li>
       </ul>
-      </div>
+      <p class="main-nav__delivery hidden-for-mobile">Бесплатная доставка по России</p>
     </nav>
-    <div class="desktop-container">
-      <p class="page-header__delivery hidden-for-mobile">Бесплатная доставка по России</p>
-    </div>
+
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Магазин товаров ручной работы "Мишка"</h1>
     <section class="promo">
-      <h2 class="promo__heading">Милые штуки ручной работы для дома</h2>
+      <h2 class="promo__heading container">Милые штуки ручной работы для дома</h2>
       <ul class="promo__list">
         <li>
           <a class="promo__unit promo__unit--interior" href="#">Предметы интерьера</a>
         </li>
         <li>
-          <a class="promo__unit promo__unit--toys" href="#">Детские игрушки</a>
+          <a class="promo__unit promo__unit--toy" href="#">Детские игрушки</a>
         </li>
       </ul>
     </section>
     <section class="week-product container ">
-      <div class="week-product__wrapper">
-        <h2 class="week-product__topic">Товар недели</h2>
-        <h3 class="week-product__heading">Вязаные корзинки</h3>
-      </div>
+      <h2 class="week-product__topic">Товар недели</h2>
+      <h3 class="week-product__heading">Вязаные корзинки</h3>
       <p class="week-product__description">
         Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.
       </p>
@@ -82,13 +72,9 @@
         <dd class="product-params__cell product-params__cell--value">25 см</dd>
         <dt class="product-params__cell product-params__cell--param">Высота:</dt>
         <dd class="product-params__cell product-params__cell--value">15см</dd>
-        <dt class="visually-hidden">Изображение</dt>
-        <dd class="product-params__image">
-          <img class="week-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Товар недели - Вязаные корзинки">
-        </dd>
-        <dt class="week-product__price week-product__price--param">Цена:</dt>
-        <dd class="week-product__price">990 руб.</dd>
       </dl>
+      <img class="week-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Товар недели - Вязаные корзинки">
+      <p class="week-product__price">Цена: 990 руб.</p>
       <a class="week-product__checkout button" href="#">Заказать</a>
     </section>
     <section class="about container">

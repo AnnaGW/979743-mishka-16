@@ -8,10 +8,12 @@
 }
 
 .promo__heading {
-  width: 260px;
-  margin: 0 auto;
+  /*width: 260px;
+  margin: 0 auto;*/
+  min-height: 90px;
   margin-top: 70px;
-  margin-bottom: 124px;
+  margin-bottom: 122px;
+  /*padding: 0 30px;*/
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
@@ -27,13 +29,24 @@
 
 .promo__unit {
   display: block;
-  width: 160px;
+  width: 130px;
   margin: 0 auto;
-  padding: 27px 130px 27px 30px;
+  padding: 27px 130px;
+  padding-left: 0;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
   color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: right center;
+
+  &--interior {
+    background-image: url("../img/icon-interior.svg");
+  }
+
+  &--toy {
+    background-image: url("../img/icon-toy.svg");
+  }
 }
 
 .promo__list li:nth-child(odd) {
@@ -46,6 +59,67 @@
 
 @media screen and (min-width: $tablet-width) {
   .promo {
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: 50% -60px;
     border-top: 1px solid #f9f9f9;
+  }
+
+  .promo__heading {
+    min-height: 100px;
+    margin-top: 95px;
+    margin-bottom: 370px;
+    /*padding: 0 130px;*/
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .promo__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 50px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+  }
+
+  .promo__list li {
+    box-sizing: border-box;
+    width: 50%;
+    padding-right: 35px;
+  }
+
+  .promo__unit {
+    width: 167px;
+    min-height: 60px;
+    margin: 0;
+    padding-top: 30px;
+    padding-right: calc(100% - 35px - 167px);
+    padding-bottom: 15px;
+    padding-left: 35px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .promo {
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-position: 50% -60px;
+  }
+
+  .promo__heading {
+    /*padding: 0 225px;*/
+    width: 700px;
+    min-height: 114px;
+    margin: 0 auto;
+    margin-top: 95px;
+    margin-bottom: 356px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .promo__list {
+    width: 1050px;
+    margin: 0 auto;
   }
 }
