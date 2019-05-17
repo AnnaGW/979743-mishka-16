@@ -7,7 +7,9 @@
 }
 
 .feedback__heading {
+  margin: 0;
   margin-bottom: 35px;
+  font-weight: 700;
   font-size: 25px;
   line-height: 30px;
 }
@@ -35,4 +37,50 @@
   width: 125px;
   height: 50px;
   margin-bottom: 38px;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .feedback {
+    background-image:
+      url("../img/review@1x.jpg"),
+      url("../img/bg-zigzag-line.svg");
+    background-repeat: no-repeat;
+    background-position:
+      0 0,
+      bottom;
+  }
+
+  .feedback__heading {
+    margin-bottom: 60px;
+    padding-top: 85px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .feedback__description {
+    margin-bottom: 100px;
+    font-size: 17px;
+  }
+
+  .feedback__name {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .feedback {
+      background-position: 50px 0;
+    }
+
+    .feedback__heading {
+      margin-left: 175px;
+      padding-top: 80px;
+      font-size: 53px;
+      line-height: 57px;
+    }
+
+    .feedback__description {
+      margin-bottom: 45px;
+      margin-left: 175px;
+    }
 }

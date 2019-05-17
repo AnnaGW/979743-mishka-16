@@ -59,6 +59,7 @@
 
 @media screen and (min-width: $tablet-width) {
   .promo {
+    margin-bottom: 50px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: 50% -60px;
     border-top: 1px solid #f9f9f9;
@@ -103,6 +104,7 @@
 
 @media screen and (min-width: $desktop-width) {
   .promo {
+    margin-bottom: 130px;
     background-image: url("../img/hero-desktop@1x.jpg");
     background-position: 50% -60px;
   }

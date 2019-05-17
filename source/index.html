@@ -3,6 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -60,8 +63,10 @@
       </ul>
     </section>
     <section class="week-product container ">
-      <h2 class="week-product__topic">Товар недели</h2>
-      <h3 class="week-product__heading">Вязаные корзинки</h3>
+      <header class="week-product__header">
+        <h2 class="week-product__topic">Товар недели</h2>
+        <h3 class="week-product__heading">Вязаные корзинки</h3>
+      </header>
       <p class="week-product__description">
         Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.
       </p>
@@ -71,10 +76,14 @@
         <dt class="product-params__cell product-params__cell--param">Диаметр:</dt>
         <dd class="product-params__cell product-params__cell--value">25 см</dd>
         <dt class="product-params__cell product-params__cell--param">Высота:</dt>
-        <dd class="product-params__cell product-params__cell--value">15см</dd>
+        <dd class="product-params__cell product-params__cell--value">15 см</dd>
+        <dt class="visually-hidden">Изображение</dt>
+        <dd class="product-params__image">
+          <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Товар недели - Вязаные корзинки">
+        </dd>
+        <dt class="product-params__price product-params__price--param">Цена:</dt>
+        <dd class="product-params__price">990 руб.</dd>
       </dl>
-      <img class="week-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Товар недели - Вязаные корзинки">
-      <p class="week-product__price">Цена: 990 руб.</p>
       <a class="week-product__checkout button" href="#">Заказать</a>
     </section>
     <section class="about container">
@@ -84,7 +93,7 @@
         <li class="feature-list__item feature-list__item--price">Скандинавский стиль по российской цене</li>
         <li class="feature-list__item feature-list__item--like">Увеличивает лайки на фотографиях</li>
         <li class="feature-list__item feature-list__item--love">Связано вручную с любовью и умилением</li>
-        <li class="feature-list__item feature-list__item--domestic">Поддержка отечественнрого производителя</li>
+        <li class="feature-list__item feature-list__item--domestic">Поддержка отечественного производителя</li>
         <li class="feature-list__item feature-list__item--gift">Поставляется в подарочной упаковке</li>
       </ul>
     </section>

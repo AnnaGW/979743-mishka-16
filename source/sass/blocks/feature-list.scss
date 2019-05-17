@@ -7,4 +7,74 @@
 .feature-list__item {
   margin-bottom: 33px;
   padding-top: 58px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  &--materials {
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+
+  &--price {
+    background-image: url("../img/icon-feature-money.svg");
+  }
+  &--like {
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+  &--love {
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+  &--domestic {
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+  &--materials {
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+  &--gift {
+    background-image: url("../img/icon-feature-gift.svg");
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 668px;
+  }
+
+  .feature-list__item {
+    width: 300px;
+    padding-right: 34px;
+    font-size: 20px;
+    line-height: 22px;
+
+    &--price {
+      order: 2;
+    }
+    &--like {
+      order: 4;
+    }
+    &--love {
+      order: 1;
+    }
+    &--domestic {
+      order: 3;
+    }
+    &--gift {
+      order: 5;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .feature-list {
+    width: 700px;
+    margin-left: 175px;
+  }
+
+  .feature-list__item {
+    padding-right: 50px;
+  }
 }
