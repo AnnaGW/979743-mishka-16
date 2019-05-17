@@ -20,18 +20,19 @@
   &--price {
     background-image: url("../img/icon-feature-money.svg");
   }
+
   &--like {
     background-image: url("../img/icon-feature-heart.svg");
   }
+
   &--love {
     background-image: url("../img/icon-feature-ball.svg");
   }
+
   &--domestic {
     background-image: url("../img/icon-feature-rocket.svg");
   }
-  &--materials {
-    background-image: url("../img/icon-feature-flower.svg");
-  }
+
   &--gift {
     background-image: url("../img/icon-feature-gift.svg");
   }
@@ -53,15 +54,19 @@
     &--price {
       order: 2;
     }
+
     &--like {
       order: 4;
     }
+
     &--love {
       order: 1;
     }
+
     &--domestic {
       order: 3;
     }
+
     &--gift {
       order: 5;
     }
