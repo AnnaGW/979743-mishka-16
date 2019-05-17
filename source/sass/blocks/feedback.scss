@@ -32,15 +32,32 @@
   font-size: 17px;
 }
 
-.feedback__next,
-.feedback__prev {
-  width: 125px;
+.feedback__button {
+  width: 131px;
   height: 50px;
   margin-bottom: 38px;
+  padding: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 1px solid #ececec;
+
+  &--prev {
+    background-image: url("../img/icon-left-arrow.svg");
+  }
+
+  &--next {
+    margin-left: -4px;
+    background-image: url("../img/icon-right-arrow.svg");
+    border-left: none;
+  }
 }
 
 @media screen and (min-width: $tablet-width) {
   .feedback {
+    position: relative;
+    margin-bottom: 50px;
+    padding-bottom: 135px;
     background-image:
       url("../img/review@1x.jpg"),
       url("../img/bg-zigzag-line.svg");
@@ -51,24 +68,50 @@
   }
 
   .feedback__heading {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     padding-top: 85px;
     font-size: 43px;
     line-height: 50px;
   }
 
   .feedback__description {
-    margin-bottom: 100px;
+    margin-bottom: 55px;
     font-size: 17px;
   }
 
+  .feedback__positioning {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .feedback__name {
+    margin-bottom: 10px;
     font-size: 18px;
+  }
+
+  .feedback__instagram {
+    margin: 0;
+  }
+
+  .feedback__button {
+    width: 18px + 50px + 18px;
+    margin-bottom: 0;
+    border: none;
+  }
+
+  .feedback__write {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    width: 175px;
+    font-size: 17px;
   }
 }
 
 @media screen and (min-width: $desktop-width) {
   .feedback {
+    margin-bottom: 70px;
+    padding-bottom: 190px;
     background-position:
       50px 0,
       bottom;
@@ -84,5 +127,13 @@
   .feedback__description {
     margin-bottom: 45px;
     margin-left: 175px;
+  }
+
+  .feedback__positioning {
+    margin-left: 175px;
+  }
+
+  .feedback__name {
+    font-size: 17px;
   }
 }

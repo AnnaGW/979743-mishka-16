@@ -21,7 +21,7 @@
   display: block;
 }
 
-@media screen and (max-width: $tablet-width) {
+@media screen and (max-width: $tablet-width - 1) {
   .hidden-for-mobile {
     position: absolute;
     width: 1px;

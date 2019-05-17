@@ -18,11 +18,14 @@
 
 @media screen and (min-width: $tablet-width) {
   .user-list {
-    margin: 0 50px;
+    justify-content: flex-end;
+    /*margin: 0 50px;*/
+    margin-right: 50px;
+    margin-left: auto;
   }
 
   .user-list__item {
-    padding-right: 0;
+    /*margin-left: 20px;*/
     text-align: right;
     border-left: 1px solid #ececec;
 
@@ -37,6 +40,7 @@
     &--cart {
       width: 212px;
       padding: 32px 0;
+      /*padding-right: 20px;*/
       padding-left: 52px;
     }
   }
@@ -51,7 +55,7 @@
     margin-left: 0;
   }
 
-  .user-list li:first-child {
+  /*.user-list li:first-child {
     margin-left: auto;
-  }
+  }*/
 }
