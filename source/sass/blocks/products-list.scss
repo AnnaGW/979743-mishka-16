@@ -3,3 +3,11 @@
   padding: 0;
   list-style: none;
 }
+
+@media screen and (min-width: $desktop-width) {
+  .products-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

@@ -10,3 +10,11 @@
   line-height: 24px;
   color: #444444;
 }
+
+@media screen and (min-width: $tablet-width) {
+  .service-order__description {
+    margin-bottom: 60px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

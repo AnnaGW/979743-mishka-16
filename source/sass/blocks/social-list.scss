@@ -1,9 +1,10 @@
 .social-list {
   display: flex;
   justify-content: space-between;
-  width: 180px;
+  /*width: 180px;*/
   padding: 15px (260px - 180px) / 2;
   list-style: none;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .social-list__item {
@@ -23,5 +24,12 @@
 
   &--twitter {
     background-image: url("../img/icon-twitter.svg");
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .social-list {
+    padding: 0 40px;
+    border: none;
   }
 }

@@ -13,37 +13,31 @@
 <body>
 
   <header class="page-header">
-    <div class="container">
-      <a class="page-header__logo-link" href="index.html">
-        <img class="page-header__logo-image page-header__logo-image--mobile" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин товаров ручной работы Мишка">
-        <img class="page-header__logo-image page-header__logo-image--tablet" src="img/logo-tablet.svg" width="113" height="46" alt="Магазин товаров ручной работы Мишка">
-        <img class="page-header__logo-image page-header__logo-image--desktop" src="img/logo-desktop.svg" width="149" height="62" alt="Магазин товаров ручной работы Мишка">
+
+    <button class="page-header__toggle js-hidden" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <nav class="main-nav js-show">
+      <a class="main-nav__logo-link" href="index.html">
+        <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин товаров ручной работы Мишка">
       </a>
-    </div>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="desktop-container">
-        <ul class="main-nav__list menu-list">
-          <li>
-            <a class="menu-list__item menu-list__item--first" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li>
-            <a class="menu-list__item">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list user-list">
+      <ul class="main-nav__list menu-list">
         <li>
-          <a class="user-list__item user-list__item--search hidden-for-tablet-desktop" href="#">Поиск по сайту</a>
+          <a class="menu-list__item menu-list__item--first" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li>
+          <a class="menu-list__item">Вязание на заказ</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list user-list">
+        <li>
+          <a class="user-list__item user-list__item--search" href="#">Поиск по сайту</a>
         </li>
         <li>
           <a class="user-list__item user-list__item--cart" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
-      </div>
-      <div class="desktop-container-bottom">
-        <ul class="main-nav__list sale-list hidden-for-mobile-tablet">
+      <ul class="main-nav__list sale-list hidden-for-mobile-tablet">
         <li>
           <a class="sale-list__item sale-list__item--first" href="#">Новые поступления</a>
         </li>
@@ -51,11 +45,9 @@
           <a class="sale-list__item" href="#">Распродажа</a>
         </li>
       </ul>
-      </div>
+      <p class="main-nav__delivery hidden-for-mobile">Бесплатная доставка по России</p>
     </nav>
-    <div class="desktop-container">
-      <p class="page-header__delivery hidden-for-mobile">Бесплатная доставка по России</p>
-    </div>
+
   </header>
   <main>
     <h1 class="page-heading">Вязание на заказ</h1>
@@ -146,33 +138,36 @@
     </section>
 
   </main>
-  <footer class="page-footer">
-    <div class="container">
+  <div class="bg-wrapper">
+    <footer class="page-footer container">
+      <a class="page-footer__logo hidden-for-mobile" href="index.html">
+        <img src="img/logo-footer.svg" width="102" height="34" alt="Магазин товаров ручной работы Мишка">
+      </a>
       <ul class="page-footer__list social-list">
-        <li>
-          <a class="social-list__item social-list__item--insta" href="#">
-            <span class="visually-hidden">Инстаграм</span>
-          </a>
-        </li>
-        <li>
-          <a class="social-list__item social-list__item--fb" href="#">
-            <span class="visually-hidden">Фейсбук</span>
-          </a>
-        </li>
-        <li>
-          <a class="social-list__item social-list__item--twitter" href="#">
-            <span class="visually-hidden">Твиттер</span>
-          </a>
-        </li>
-      </ul>
-      <div class="page-footer-wrapper">
+          <li>
+            <a class="social-list__item social-list__item--insta" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-list__item social-list__item--fb" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-list__item social-list__item--twitter" href="#">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+        </ul>
+      <div class="page-footer__wrapper">
         <p class="page-footer__developer">Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="page-footer__developer-logo" src="img/htmlacademy.svg" alt="Логотип разработчика html Академия">
+        <a class="page-footer__developer-logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/htmlacademy.svg" alt="Логотип разработчика html Академия">
         </a>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 
 </html>

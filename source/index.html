@@ -138,9 +138,12 @@
       <a class="contacts__write-us button" href="#">Напишите нам</a>
     </section>
   </main>
-  <footer class="page-footer">
-    <div class="container">
-      <ul class="page-footer__list social-list">
+  <div class="bg-wrapper">
+    <footer class="page-footer container">
+    <a class="page-footer__logo hidden-for-mobile">
+      <img src="img/logo-footer.svg" width="102" height="34" alt="Магазин товаров ручной работы Мишка">
+    </a>
+    <ul class="page-footer__list social-list">
         <li>
           <a class="social-list__item social-list__item--insta" href="#">
             <span class="visually-hidden">Инстаграм</span>
@@ -157,14 +160,14 @@
           </a>
         </li>
       </ul>
-      <div class="page-footer-wrapper">
+    <div class="page-footer__wrapper">
         <p class="page-footer__developer">Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="page-footer__developer-logo" src="img/htmlacademy.svg" alt="Логотип разработчика html Академия">
+        <a class="page-footer__developer-logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/htmlacademy.svg" alt="Логотип разработчика html Академия">
         </a>
       </div>
-    </div>
   </footer>
+  </div>
   <section class="modal-in-cart modal">
     <h2 class="modal-in-cart__heading">Добавить в корзину</h2>
     <form class="modal-in-cart__form choice-size" method="post" action="https://echo.htmlacademy.ru">
