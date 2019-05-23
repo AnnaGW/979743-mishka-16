@@ -3,7 +3,6 @@
   width: 260px;
   margin: 0 auto;
   margin-bottom: 58px;
-  /*padding: 30px 0;*/
   border: 1px solid #ededed;
 
   video {
@@ -12,11 +11,6 @@
     margin-bottom: 25px;
   }
 }
-
-/*.manufacturing__wrapper {
-  padding: 30px 0;
-  border: 1px solid #ededed;
-}*/
 
 .manufacturing__heading {
   margin: 0;
@@ -46,7 +40,6 @@
   margin: 0 auto;
   margin-bottom: 32px;
   font-size: 17px;
-  /*line-height: 17px;*/
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -62,7 +55,7 @@
       width: 668px;
       height: 455px;
       margin: 0;
-      background-color: rgba(250, 20, 200, 0.3);
+      background-color: #f1f1f1;
     }
   }
 
@@ -97,7 +90,7 @@
     video {
       width: 682px;
       height: 455px;
-      background-color: rgba(20, 200, 200, 0.3);
+      background-color: #f1f1f1;
     }
   }
 

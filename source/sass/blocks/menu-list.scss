@@ -15,7 +15,8 @@
   }
 
   .menu-list__item {
-    width: 167px;
+    /*width: 167px;*/
+    margin-right: 35px;
     padding: 20px 0;
     text-align: left;
   }
@@ -34,6 +35,7 @@
 
   .menu-list__item {
     width: auto;
+    margin-right: 0;
     padding: 32px 35px;
     border-left: 1px solid #ececec;
 

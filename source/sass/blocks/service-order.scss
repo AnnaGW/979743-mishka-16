@@ -4,17 +4,40 @@
 
 .service-order__description {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+  padding: 0 30px;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   color: #444444;
 }
 
+.service-order__form {
+  margin: 0 30px;
+}
+
 @media screen and (min-width: $tablet-width) {
+  .service-order {
+    margin-bottom: 50px;
+  }
+
   .service-order__description {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
+    padding: 0 50px;
     font-size: 17px;
     line-height: 30px;
+  }
+
+  .service-order__form {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .service-order__description {
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    padding: 0;
   }
 }

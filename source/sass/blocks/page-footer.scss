@@ -1,5 +1,4 @@
 .page-footer {
-  /*padding: 0 30px;*/
   background-color: #f1f1f1;
 }
 
@@ -7,7 +6,7 @@
   margin: 0;
 }
 
-.page-footer__wrapper {
+.page-footer__developer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -15,8 +14,7 @@
   padding: 23px 39px;
 }
 
-.page-footer__developer {
-  /*width: 156px;*/
+.page-footer__developer-label {
   margin: 0;
   padding-right: 25px;
   font-weight: 700;
@@ -30,22 +28,23 @@
 }
 
 @media screen and (min-width: $tablet-width) {
-  .page-footer {
+  .page-footer__inner {
     display: flex;
     justify-content: space-between;
-    padding-top: 47px;
-    padding-bottom: 47px;
+    padding-top: 46px;
+    padding-bottom: 46px;
   }
 
   .page-footer__logo {
     display: block;
-    width: 30%;
-    padding: 3px 0;
+    width: 27%;
+    padding-top: 5px;
   }
 
-  .page-footer__wrapper {
+  .page-footer__developer {
     justify-content: flex-end;
-    width: 30%;
+    width: 27%;
+    margin: 0;
     padding: 0;
     padding-left: 20px;
   }
