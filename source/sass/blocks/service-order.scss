@@ -12,24 +12,16 @@
   color: #444444;
 }
 
-.service-order__form {
-  margin: 0 30px;
-}
-
 @media screen and (min-width: $tablet-width) {
   .service-order {
     margin-bottom: 50px;
   }
 
   .service-order__description {
-    margin-bottom: 70px;
+    margin-bottom: 75px;
     padding: 0 50px;
     font-size: 17px;
     line-height: 30px;
-  }
-
-  .service-order__form {
-    margin: 0;
   }
 }
 

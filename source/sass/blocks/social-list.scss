@@ -1,8 +1,8 @@
 .social-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  /*width: 100%;*/
+  justify-content: center;
+  width: 260px;
   padding: 15px (260px - 180px) / 2;
   list-style: none;
   border-bottom: 1px solid #e5e5e5;
@@ -30,7 +30,8 @@
 
 @media screen and (min-width: $tablet-width) {
   .social-list {
-    width: 180px;
+    /*justify-content: center;
+    width: 180px;*/
     padding: 0 40px;
     border: none;
   }
