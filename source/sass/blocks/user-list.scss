@@ -3,6 +3,7 @@
 }
 
 .user-list__item {
+  position: relative;
   display: block;
   width: 260px - 45px;
   margin: 0 auto;
@@ -10,13 +11,23 @@
   text-align: left;
   background-repeat: no-repeat;
   background-position: 30px 50%;
+}
 
-  &--search {
-    background-image: url("../img/icon-search.svg");
+.user-list__icon {
+  position: absolute;
+  opacity: 0.2;
+
+  &:hover,
+  &:focus {
+    fill: #63d1bb;
+    opacity: 1;
   }
 
-  &--cart {
-    background-image: url("../img/icon-cart.svg");
+  &--search {
+    top: 30px;
+    left: 28px;
+    width: 18px;
+    height: 18px;
   }
 }
 
@@ -43,6 +54,13 @@
       width: 212px;
       padding: 32px 0;
       padding-left: 52px;
+    }
+  }
+
+  .user-list__icon {
+    &--search {
+      top: 35px;
+      left: 32px;
     }
   }
 }
