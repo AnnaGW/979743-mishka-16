@@ -5,7 +5,8 @@
 }
 
 .choice-size__description {
-  margin-bottom: 25px;
+  margin: 0;
+  margin-bottom: 23px;
   text-align: center;
   border: none;
 }
@@ -19,7 +20,7 @@
 }
 
 .choice-size__label {
-  width: 82px;
+  width: 84px;
   border-color: #ececec;
 }
 
@@ -30,8 +31,23 @@
 
 .choice-size__button {
   font-size: 17px;
-  line-height: 17px;
+  /*line-height: 17px;*/
   color: #ffffff;
   background-color: #63d1bb;
   border-color: #63d1bb;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .choice-size__label {
+    width: 112px;
+  }
+
+  .choice-size__button {
+    width: 354px;
+  }
+
+  .choice-size__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }

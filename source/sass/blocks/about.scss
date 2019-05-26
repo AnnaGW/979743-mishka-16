@@ -1,9 +1,6 @@
 .about {
   margin-bottom: 60px;
   padding-top: 30px;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 20px;
 }
 
 .about__heading {
@@ -11,4 +8,31 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .about {
+    margin-bottom: 84px;
+  }
+
+  .about__heading {
+    margin-top: 60px;
+    margin-bottom: 45px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .about {
+    margin-bottom: 88px;
+  }
+
+  .about__heading {
+    margin-top: 70px;
+    margin-bottom: 40px;
+    margin-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

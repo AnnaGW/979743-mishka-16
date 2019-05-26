@@ -1,7 +1,4 @@
 .container {
-  box-sizing: border-box;
-  width: 320px;
-  margin: 0 auto;
   padding: 0 30px;
 }
 
@@ -16,7 +13,7 @@
   clip: rect(0 0 0 0);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $tablet-width - 1) {
   .hidden-for-mobile {
     position: absolute;
     width: 1px;
@@ -26,5 +23,31 @@
     overflow: hidden;
     border: 0;
     clip: rect(0 0 0 0);
+  }
+}
+
+@media screen and (max-width: $desktop-width) {
+  .hidden-for-mobile-tablet {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .container {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .container {
+    width: 1050px;
+    margin: 0 auto;
   }
 }

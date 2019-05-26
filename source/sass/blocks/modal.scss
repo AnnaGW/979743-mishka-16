@@ -1,0 +1,13 @@
+.modal {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  z-index: 2;
+  transform: translateX(-160px);
+}
+
+@media screen and (min-width: $tablet-width) {
+  .modal {
+    transform: translateX(-284px);
+  }
+}

@@ -1,9 +1,113 @@
-.page-header__logo-link {
-  display: block;
-  padding: 22px 0;
+.page-header {
+  border-top: 1px solid #ececec;
+
+  &--index {
+    background-color: #f9f9f9;
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 375px;
+  }
 }
 
-.page-header__logo-image {
-  display: block;
-  margin: 0 auto;
+@media screen and (max-width: $tablet-width - 1) {
+  .page-header--closed .page-header__toggle {
+    position: absolute;
+    top: 31px;
+    right: 31px;
+    display: block;
+    width: 20px;
+    height: 14px;
+    background-color: #ffffff;
+    background-image: url("../img/icon-menu-open.svg");
+    border: none;
+    outline: none;
+  }
+
+  .page-header--opened .page-header__toggle {
+    position: absolute;
+    top: 31px;
+    right: 31px;
+    display: block;
+    width: 21px;
+    height: 21px;
+    background-color: #ffffff;
+    background-image: url("../img/icon-menu-close.svg");
+    border: none;
+    outline: none;
+  }
+
+  .page-header--closed .main-nav__list {
+    display: none;
+  }
+
+  .page-header--closed {
+    background-position: 50% 50px;
+  }
+
+  .page-header--nojs .main-nav__list {
+    display: block;
+  }
+
+  .page-header--nojs .page-header__toggle {
+    display: none;
+  }
+
+  .page-header--nojs {
+    background-position: 50% 375px;
+  }
+}
+
+.page-header__description {
+  min-height: 282px - 70px;
+  margin: 0;
+  padding-top: 70px;
+  /*padding-bottom: 122px;*/
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  color: #010000;
+  border-top: 1px solid #ececec;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .page-header {
+    &--index {
+      background-color: #ffffff;
+      background-image: url("../img/hero-tablet@1x.jpg");
+      /*background-repeat: no-repeat;*/
+      background-position: 50% 88px;
+    }
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__description {
+    min-height: 626px - 65px - 70px;
+    margin-top: 0;
+    /*padding-bottom: 370px;*/
+    font-size: 43px;
+    line-height: 50px;
+    border: none;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .page-header {
+    &--index {
+      background-color: #f9f9f9;
+      background-image: url("../img/hero-desktop@1x.jpg");
+    }
+  }
+
+  .page-header__description {
+    width: 700px;
+    min-height: 626px - 65px - 85px;
+    margin: 0 auto;
+    padding-top: 85px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

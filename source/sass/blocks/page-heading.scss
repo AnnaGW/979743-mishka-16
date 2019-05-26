@@ -1,8 +1,32 @@
 .page-heading {
+  margin: 0;
   margin-bottom: 30px;
   padding: 74px 30px;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
   background-color: #f1f1f1;
+  border-top: 1px solid #ececec;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .page-heading {
+    margin-bottom: 80px;
+    padding: 55px 50px;
+    font-size: 43px;
+    line-height: 50px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    border: none;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .page-heading {
+    margin-bottom: 132px;
+    padding: 65px 50px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
