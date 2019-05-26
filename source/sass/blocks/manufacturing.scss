@@ -5,6 +5,21 @@
   margin-bottom: 58px;
   border: 1px solid #ededed;
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 96px;
+    left: 0;
+    width: 260px;
+    height: 150px;
+    background-image: url("../img/video-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("img/video-mobile@2x.jpg");
+      background-size: 260px auto;
+    }
+  }
+
   video {
     width: 260px;
     height: 150px;
@@ -28,6 +43,7 @@
   position: absolute;
   top: 132px;
   left: 80px;
+  z-index: 2;
 }
 
 .manufacturing__description {
@@ -47,6 +63,19 @@
     width: 668px;
     margin: 0 auto;
     margin-bottom: 63px;
+
+    &::after {
+      top: 0px;
+      left: 0;
+      width: 668px;
+      height: 455px;
+      background-image: url("../img/video-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("img/video-tablet@2x.jpg");
+        background-size: 668px auto;
+      }
+    }
 
     video {
       position: absolute;
@@ -86,6 +115,19 @@
 @media screen and (min-width: $desktop-width) {
   .manufacturing {
     width: 1050px;
+
+    &::after {
+      top: 0px;
+      left: 0;
+      width: 682px;
+      height: 455px;
+      background-image: url("../img/video-desktop@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("img/video-desktop@2x.jpg");
+        background-size: 682px auto;
+      }
+    }
 
     video {
       width: 682px;
