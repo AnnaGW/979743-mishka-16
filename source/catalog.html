@@ -12,14 +12,18 @@
 
 <body>
 
-  <header class="page-header">
+  <header class="page-header page-header--closed page-header--nojs">
 
     <button class="page-header__toggle js-hidden" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
     <nav class="main-nav js-show">
       <a class="main-nav__logo-link" href="index.html">
-        <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин товаров ручной работы Мишка">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин товаров ручной работы Мишка">
+        </picture>
       </a>
       <ul class="main-nav__list menu-list">
         <li>
@@ -55,7 +59,11 @@
       <ul class="catalog__list products-list">
         <li class="products-list__item card-product">
           <a class="card-product__image-link" href="#">
-            <img class="card-product__image" src="img/photo-hare-mobile@1x.jpg" width="258" height="195" alt="товар зайчик-попрыгайчик">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg">
+              <img class="card-product__image" src="img/photo-hare-mobile@1x.jpg" alt="товар зайчик-попрыгайчик">
+            </picture>
           </a>
           <div class="card-product__header-wrapper">
             <a class="card-product__name" href="#">Зайчик-попрыгайчик</a>
@@ -63,14 +71,18 @@
           </div>
           <div class="card-product__price-wrapper">
             <p class="card-product__price">1 200 руб.</p>
-            <a class="card-product__in-cart js-in-cart">
+            <a class="card-product__in-cart js-modalclick">
               <span class="visually-hidden">Положить в корзину</span>
             </a>
           </div>
         </li>
         <li class="products-list__item card-product">
           <a class="card-product__image-link" href="#">
-            <img class="card-product__image" src="img/photo-bowl-mobile@1x.jpg" width="258" height="195" alt="товар Корзинка для белья">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg">
+              <img class="card-product__image" src="img/photo-bowl-mobile@1x.jpg" alt="товар Корзинка для белья">
+            </picture>
           </a>
           <div class="card-product__header-wrapper">
             <a class="card-product__name" href="#">Корзинка для белья</a>
@@ -78,14 +90,18 @@
           </div>
           <div class="card-product__price-wrapper">
             <p class="card-product__price">690 руб.</p>
-            <a class="card-product__in-cart js-in-cart">
+            <a class="card-product__in-cart js-modalclick">
               <span class="visually-hidden">Положить в корзину</span>
             </a>
           </div>
         </li>
         <li class="products-list__item card-product">
           <a class="card-product__image-link" href="#">
-            <img class="card-product__image" src="img/photo-toys-mobile@1x.jpg" width="258" height="195" alt="товар Большая корзинка для игрушек">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg">
+              <img class="card-product__image" src="img/photo-toys-mobile@1x.jpg" alt="товар Большая корзинка для игрушек">
+            </picture>
           </a>
           <div class="card-product__header-wrapper">
             <a class="card-product__name" href="#">Большая корзинка для игрушек</a>
@@ -93,7 +109,7 @@
           </div>
           <div class="card-product__price-wrapper">
             <p class="card-product__price">1 500 руб.</p>
-            <a class="card-product__in-cart js-in-cart">
+            <a class="card-product__in-cart js-modalclick">
               <span class="visually-hidden">Положить в корзину</span>
             </a>
           </div>
@@ -101,7 +117,6 @@
       </ul>
     </section>
     <section class="manufacturing">
-
         <h2 class="manufacturing__heading">Процесс производства</h2>
         <video width="260" height="150" poster="img/video-mobile@1x.jpg">
           <source src="#" type='video/ogg; codecs="theora, vorbis"'>
@@ -173,6 +188,9 @@
 
     </form>
   </section>
+
+  <script src="js/scripts.js"></script>
+
 </body>
 
 </html>

@@ -3,21 +3,27 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <header class="page-header">
+  <header class="page-header page-header--closed page-header--nojs">
 
     <button class="page-header__toggle js-hidden" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
     <nav class="main-nav js-show">
       <a class="main-nav__logo-link" href="index.html">
-        <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин товаров ручной работы Мишка">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин товаров ручной работы Мишка">
+        </picture>
       </a>
       <ul class="main-nav__list menu-list">
         <li>
@@ -55,7 +61,7 @@
       </p>
       <form class="service-order__form order-form" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="order-form__group">
-          <legend class="order-form__group-name">Тип</legend>
+          <legend class="order-form__group-name order-form__group-name--type">Тип</legend>
           <ul class="order-form__list">
               <li class="order-form__item">
                 <input class="visually-hidden" id="type-interior" type="radio" name="type" value="for-interior" checked>
@@ -119,14 +125,12 @@
               <li class="order-form__item order-form__item--contacts">
                 <label class="order-form__group-name order-form__group-name--contacts" for="phone-field">
                   <span>Тел</span>
-                  <span class="order-form__border"></span>
                 </label>
                 <input class="order-form__input order-form__input--phone" id="phone-field" type="text" name="phone" placeholder="+7 XXX XXX XX XX">
               </li>
               <li class="order-form__item order-form__item--contacts">
                 <label class="order-form__group-name order-form__group-name--contacts" for="email-field">
                   <span>E-mail</span>
-                  <span class="order-form__border"></span>
                 </label>
                 <input class="order-form__input order-form__person-input--email" id="email-field" type="text" name="email" placeholder="Ваш Email*" required>
               </li>
@@ -135,7 +139,6 @@
         <fieldset class="order-form__group order-form__group--addition">
           <label class="order-form__group-name order-form__group-name--addition">
               <span>Доп</span>
-              <span class="order-form__border"></span>
           </label>
           <textarea class="order-form__addition" name="addition" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
@@ -177,6 +180,9 @@
       </p>
     </div>
   </footer>
+
+  <script src="js/scripts.js"></script>
+
 </body>
 
 </html>

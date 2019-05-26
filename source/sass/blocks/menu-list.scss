@@ -1,3 +1,7 @@
+.menu-list {
+  background-color: #ffffff;
+}
+
 .menu-list__item {
   display: block;
   padding: 27px 30px;
@@ -13,6 +17,10 @@
     /*background-color: #f9f9f9;*/
     background-color: #f1f1f1;
     border-top: 1px solid #e7e7e7;
+
+    &--index {
+      background-color: transparent;
+    }
   }
 
   .menu-list__item {
@@ -26,12 +34,15 @@
 @media screen and (min-width: $desktop-width) {
   .menu-list {
     order: 0;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     width: (1050px - 148px)/2;
-    margin-left: auto;
+    /*margin-left: auto;*/
     padding: 0;
+    padding-left: calc((100% - 148px - 451px - 451px) / 2);
     font-size: 17px;
-    background-color: transparent;
+    /*background-color: transparent;*/
+    background-color: #ffffff;
+    border: none;
   }
 
   .menu-list__item {

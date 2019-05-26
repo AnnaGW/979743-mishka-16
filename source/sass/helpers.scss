@@ -13,18 +13,6 @@
   clip: rect(0 0 0 0);
 }
 
-/*.bg-wrapper {
-  background-color: #f1f1f1;
-}*/
-
-.js-hidden {
-  display: none;
-}
-
-.js-show {
-  display: block;
-}
-
 @media screen and (max-width: $tablet-width - 1) {
   .hidden-for-mobile {
     position: absolute;

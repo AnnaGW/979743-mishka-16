@@ -38,15 +38,22 @@
 
   .page-footer__logo {
     display: block;
-    width: 27%;
+    width: 188px;
+    //width: 32%;
     padding-top: 5px;
+  }
+
+  .page-footer__logo img {
+    width: 102px;
+    height: 34px;
   }
 
   .page-footer__developer {
     justify-content: flex-end;
-    width: 27%;
+    /*width: 32%;*/
+    width: 188px;
     margin: 0;
     padding: 0;
-    padding-left: 20px;
+    //padding-left: 20px;
   }
 }

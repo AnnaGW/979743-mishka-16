@@ -1,3 +1,7 @@
+.user-list {
+  background-color: #ffffff;
+}
+
 .user-list__item {
   display: block;
   width: 260px - 45px;
@@ -19,13 +23,11 @@
 @media screen and (min-width: $tablet-width) {
   .user-list {
     justify-content: flex-end;
-    /*margin: 0 50px;*/
     margin-right: 50px;
     margin-left: auto;
   }
 
   .user-list__item {
-    /*margin-left: 20px;*/
     text-align: right;
     border-left: 1px solid #ececec;
 
@@ -40,7 +42,6 @@
     &--cart {
       width: 212px;
       padding: 32px 0;
-      /*padding-right: 20px;*/
       padding-left: 52px;
     }
   }
@@ -49,13 +50,8 @@
 @media screen and (min-width: $desktop-width) {
   .user-list {
     order: 2;
-    box-sizing: border-box;
     width: (1050px - 148px)/2;
-    margin-right: auto;
-    margin-left: 0;
+    margin: 0;
+    padding-right: calc((100% - 148px - 451px - 451px) / 2);
   }
-
-  /*.user-list li:first-child {
-    margin-left: auto;
-  }*/
 }

@@ -69,13 +69,15 @@
   }
 
   .card-product__header-wrapper {
-    min-height: 261px;
+    min-height: 261px - 30px;
     margin-right: 27px;
     margin-left: 334px + 27px;
+    padding-top: 30px;
   }
 
   .card-product__name {
-    padding-left: 0;
+    margin-bottom: 15px;
+    padding: 0;
     font-size: 20px;
   }
 
@@ -115,12 +117,12 @@
   }
 
   .card-product__header-wrapper {
-    min-height: 122px;
+    min-height: 122px - 30px;
     margin: 0 28px;
   }
 
   .card-product__name {
-    padding-bottom: 2px;
+    margin-bottom: 2px;
   }
 
   .card-product__params {
