@@ -8,21 +8,23 @@
 
 .page-footer__developer {
   display: flex;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 23px 39px;
+  margin: 0;
+  padding: 23px 38px;
 }
 
 .page-footer__developer-label {
   margin: 0;
-  padding-right: 25px;
+  padding-right: 10px;
   font-weight: 700;
   font-size: 19px;
   line-height: 19px;
 }
 
 .page-footer__developer-logo {
+  flex-shrink: 0;
   width: 34px;
   height: 34px;
 }
