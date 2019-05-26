@@ -9,6 +9,9 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var editorconfig = require("gulp-lintspaces");
 var stylelint = require("gulp-stylelint");
+var combineMq = require("gulp-combine-mq");
+var csso = require("gulp-csso");
+var rename = require("gulp-rename");
 
 gulp.task("html", function () {
   return gulp.src("source/**/*.html")
@@ -25,12 +28,15 @@ gulp.task("css", function () {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
+    .pipe(combineMq())
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
-    .pipe(server.stream());
+    .pipe(gulp.dest("build/css"));
 });
 
 gulp.task("css:lint", function () {
