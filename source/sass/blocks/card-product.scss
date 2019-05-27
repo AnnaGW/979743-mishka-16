@@ -3,6 +3,16 @@
   margin: 0 auto;
   margin-bottom: 30px;
   border: 1px solid #ededed;
+  //box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .card-product__image {
@@ -47,11 +57,18 @@
 }
 
 .card-product__in-cart {
+  position: relative;
   width: 102px;
   height: 72px;
-  background-image: url("../img/icon-cart.svg");
-  background-repeat: no-repeat;
-  background-position: right 28px top 50%;
+}
+
+.card-product__icon {
+  position: absolute;
+  right: 27px;
+  bottom: 31px;
+  width: 21px;
+  height: 20px;
+  opacity: 0.2;
 }
 
 @media screen and (min-width: $tablet-width) {

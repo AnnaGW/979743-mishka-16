@@ -10,4 +10,16 @@
   color: #444444;
   text-transform: uppercase;
   border: 2px solid #444444;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: #444444;
+    color: #ffffff;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(256, 256, 256, 0.3)
+  }
 }

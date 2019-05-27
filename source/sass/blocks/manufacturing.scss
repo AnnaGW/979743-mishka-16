@@ -135,6 +135,14 @@
       background-color: #f1f1f1;
     }
   }
+  .manufacturing:hover,
+  .manufacturing:focus {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .manufacturing:active {
+    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.1);
+  }
 
   .manufacturing__play {
     left: 290px;

@@ -22,16 +22,32 @@
 .choice-size__label {
   width: 84px;
   border-color: #ececec;
+
+  &:hover,
+  &:focus {
+    border-color: #c7c7c7;
+    color: #444444;
+    background-color: transparent;
+  }
+
+  &:active {
+    border-color: #63d1bb;
+  }
 }
 
 
 [type="radio"]:checked + .choice-size__label {
   border-color: #63d1bb;
+  &:hover,
+  &:focus {
+    border-color: #c7c7c7;
+    color: #444444;
+    background-color: transparent;
+  }
 }
 
 .choice-size__button {
   font-size: 17px;
-  /*line-height: 17px;*/
   color: #ffffff;
   background-color: #63d1bb;
   border-color: #63d1bb;

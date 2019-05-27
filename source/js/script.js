@@ -1,3 +1,5 @@
+svg4everybody();
+
 var navMain = document.querySelector(".page-header");
 var navToggle = document.querySelector(".page-header__toggle");
 

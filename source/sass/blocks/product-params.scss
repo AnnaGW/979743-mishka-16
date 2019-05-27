@@ -38,13 +38,14 @@
 
 .product-params__price {
   display: inline-block;
-  width: 49%;
+  width: 48%;
   margin: 28px 0;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
 
   &--param {
+    padding-right: 7px;
     text-align: right;
   }
 }

@@ -1,9 +1,9 @@
 .feedback {
-  margin-bottom: 42px;
-  padding-bottom: 51px;
-  background-image: url("../img/bg-zigzag-line.svg");
+  //margin-bottom: 42px;
+  padding-bottom: 51px - 6px;
+  /*background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
-  background-position: bottom;
+  background-position: bottom;*/
 }
 
 .feedback__heading {
@@ -56,15 +56,15 @@
 @media screen and (min-width: $tablet-width) {
   .feedback {
     position: relative;
-    margin-bottom: 50px;
-    padding-bottom: 135px;
+    //margin-bottom: 50px;
+    padding-bottom: 135px - 17px;
     background-image:
-      url("../img/review@1x.jpg"),
-      url("../img/bg-zigzag-line.svg");
+      url("../img/review@1x.jpg");
+      //url("../img/bg-zigzag-line.svg");
     background-repeat: no-repeat;
     background-position:
-      0 0,
-      bottom;
+      0 0;
+      //bottom;
   }
 
   .feedback__heading {
@@ -112,11 +112,11 @@
 
 @media screen and (min-width: $desktop-width) {
   .feedback {
-    margin-bottom: 70px;
-    padding-bottom: 190px;
+    //margin-bottom: 70px;
+    padding-bottom: 190px - 24px;
     background-position:
-      50px 0,
-      bottom;
+      50px 0;
+      //bottom;
   }
 
   .feedback__heading {

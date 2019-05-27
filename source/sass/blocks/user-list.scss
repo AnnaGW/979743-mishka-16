@@ -11,22 +11,32 @@
   text-align: left;
   background-repeat: no-repeat;
   background-position: 30px 50%;
+
+  &:hover,
+  &:focus {
+    color: rgba(#000000, 0.6);
+  }
+
+  &:active {
+    color: rgba(#000000, 0.3);
+  }
 }
 
 .user-list__icon {
   position: absolute;
   opacity: 0.2;
 
-  &:hover,
-  &:focus {
-    opacity: 1;
-    fill: #63d1bb;
-  }
-
   &--search {
     top: 30px;
     left: 28px;
     width: 18px;
+    height: 18px;
+  }
+
+  &--cart {
+    top: 30px;
+    left: 28px;
+    width: 21px;
     height: 18px;
   }
 }
@@ -59,6 +69,11 @@
 
   .user-list__icon {
     &--search {
+      top: 35px;
+      left: 32px;
+    }
+
+    &--cart {
       top: 35px;
       left: 32px;
     }

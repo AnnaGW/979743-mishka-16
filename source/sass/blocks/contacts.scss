@@ -1,5 +1,6 @@
 .contacts {
   position: relative;
+  margin-top: 42px;
   margin-bottom: 40px;
 }
 
@@ -37,6 +38,17 @@
   margin-bottom: 40px;
 }
 
+.contacts__email-link {
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .contacts__map-wrapper {
   margin-bottom: 40px;
   background-image: url("../img/map-mobile@1x.jpg");
@@ -62,6 +74,7 @@
 
 @media screen and (min-width: $tablet-width) {
   .contacts {
+    margin-top: 50px;
     margin-bottom: 55px;
     padding-top: 20px;
     background-image: url("../img/icon-flag.svg");
@@ -102,6 +115,7 @@
     position: relative;
     width: 350px;
     margin: 0 auto;
+    margin-top: 70px;
     margin-bottom: 105px;
     padding: 0;
     padding-right: 50px + 525px + 50px;

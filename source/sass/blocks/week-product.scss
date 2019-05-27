@@ -1,11 +1,6 @@
 .week-product {
-  padding-bottom: 42px;
-  /*font-size: 15px;
-  line-height: 24px;*/
+  padding-bottom: 42px - 6px;
   color: #444444;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-position: bottom;
 }
 
 .week-product__header {
@@ -78,11 +73,8 @@
   }
 
   .week-product__description {
-    /*box-sizing: border-box;
-    width: 50%;*/
     width: 292px;
     margin-bottom: 40px;
-    /*padding-right: 42px;*/
     font-size: 17px;
     line-height: 30px;
   }
@@ -91,11 +83,6 @@
     width: 50%;
     margin: 0;
   }
-
-  /*.week-product__price {
-    font-size: 20px;
-    line-height: 24px;
-  }*/
 
   .week-product__checkout {
     width: 292px;

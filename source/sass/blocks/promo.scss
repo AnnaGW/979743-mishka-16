@@ -1,49 +1,11 @@
 .promo {
   margin-bottom: 30px;
-  /*background-color: #f9f9f9;
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% -17px;*/
-  /*border-top: 1px solid #ececec;*/
 }
-
-/*.promo__heading {
-  min-height: 90px;
-  margin-top: 70px;
-  margin-bottom: 122px;
-  font-weight: 700;
-  font-size: 27px;
-  line-height: 30px;
-  text-align: center;
-  color: #010000;
-}*/
 
 .promo__list {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.promo__unit {
-  display: block;
-  width: 130px;
-  margin: 0 auto;
-  padding: 27px 130px;
-  padding-left: 0;
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 24px;
-  color: #ffffff;
-  background-repeat: no-repeat;
-  background-position: right center;
-
-  &--interior {
-    background-image: url("../img/icon-interior.svg");
-  }
-
-  &--toy {
-    background-image: url("../img/icon-toy.svg");
-  }
 }
 
 .promo__list li:nth-child(odd) {
@@ -54,23 +16,64 @@
   background-color: #56c3b2;
 }
 
+.promo__unit {
+  position: relative;
+  display: block;
+  //width: 100%; //
+  //width: 130px;
+  min-height: 102px - 27px - 27px;
+  margin: 0 auto;
+  //padding: 27px 130px;
+  padding: 27px 30px; //
+  //padding-left: 0;
+  padding-right: 130px; //
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: inherit;
+  background-repeat: no-repeat;
+  background-position: right center;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-5px);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.promo__unit__icon {
+  position: absolute;
+  opacity: 0.5;
+
+  &--interior {
+    right: 6px + 35px;
+    width: 41px;
+    height: 63px;
+  }
+
+  &--toy {
+    right: -3px + 35px;
+    width: 61px;
+    height: 61px;
+  }
+}
+
+.promo__unit:hover .promo__unit__icon,
+.promo__unit:focus .promo__unit__icon {
+  opacity: 0.7;
+}
+
 @media screen and (min-width: $tablet-width) {
   .promo {
     margin-bottom: 50px;
+    position: relative;
+    margin: 0;
     background-color: #f9f9f9;
-    /*padding-top: 95px;*/
-    /*background-image: url("../img/hero-tablet@1x.jpg");
-    background-position: 50% -60px;
-    border: none;*/
   }
-
-  /*.promo__heading {
-    min-height: 100px;
-    margin-top: 0;
-    margin-bottom: 370px;
-    font-size: 43px;
-    line-height: 50px;
-  }*/
 
   .promo__list {
     display: flex;
@@ -84,7 +87,8 @@
   .promo__list li {
     box-sizing: border-box;
     width: 50%;
-    padding-right: 35px;
+    padding-bottom: 34px;
+    //padding-right: 35px;
   }
 
   .promo__unit {
@@ -93,28 +97,35 @@
     margin: 0;
     padding-top: 30px;
     padding-right: calc(100% - 35px - 167px);
-    padding-bottom: 15px;
+    //padding-bottom: 15px;
+    padding-bottom: 0; //
     padding-left: 35px;
     font-size: 20px;
     line-height: 30px;
+    background-color: inherit;
+
+    /*&:hover,
+    &:focus {
+      transform: translateY(-5px);
+    }*/
+  }
+
+  .promo__zigzag-fill {
+    position: absolute;
+    bottom: -3px;
+    width: 100%;
+    height: 34px;
+  //  margin-top: 0;
+    fill: #ffffff;
+    z-index: 2;
+    //background-color: #63d1bb;
   }
 }
 
 @media screen and (min-width: $desktop-width) {
   .promo {
     margin-bottom: 130px;
-    /*background-image: url("../img/hero-desktop@1x.jpg");
-    background-position: 50% -60px;*/
   }
-
-  /*.promo__heading {
-    width: 700px;
-    min-height: 114px;
-    margin: 0 auto;
-    margin-bottom: 356px;
-    font-size: 53px;
-    line-height: 57px;
-  }*/
 
   .promo__list {
     width: 1050px;
