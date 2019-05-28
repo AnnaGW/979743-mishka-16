@@ -17,8 +17,9 @@
 @media screen and (max-width: $tablet-width - 1) {
   .page-header--closed .page-header__toggle {
     position: absolute;
-    top: 31px;
-    right: 31px;
+    top: 33px;
+    right: 27px;
+    z-index: 2;
     display: block;
     width: 20px;
     height: 14px;
@@ -46,7 +47,7 @@
   }
 
   .page-header--closed {
-    background-position: 50% 50px;
+    background-position: 50% 60px;
   }
 
   .page-header--nojs .main-nav__list {
@@ -66,7 +67,6 @@
   min-height: 282px - 70px;
   margin: 0;
   padding-top: 70px;
-  /*padding-bottom: 122px;*/
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
@@ -80,7 +80,6 @@
     &--index {
       background-color: #ffffff;
       background-image: url("../img/hero-tablet@1x.jpg");
-      /*background-repeat: no-repeat;*/
       background-position: 50% 88px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -95,9 +94,9 @@
   }
 
   .page-header__description {
-    min-height: 626px - 65px - 70px;
+    min-height: 475px;
     margin-top: 0;
-    /*padding-bottom: 370px;*/
+    padding-top: 95px;
     font-size: 43px;
     line-height: 50px;
     border: none;
@@ -119,9 +118,9 @@
 
   .page-header__description {
     width: 700px;
-    min-height: 626px - 65px - 85px;
+    min-height: 473px;
     margin: 0 auto;
-    padding-top: 85px;
+    padding-top: 95px;
     font-size: 53px;
     line-height: 57px;
   }

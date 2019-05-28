@@ -4,4 +4,15 @@
   background-color: transparent;
   background-image: url("../img/icon-play.svg");
   border: none;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.7);
+    opacity: 0.3;
+  }
 }

@@ -1,26 +1,36 @@
 .feedback {
-  margin-bottom: 42px;
+  position: relative;
+  margin-bottom: 37px;
   padding-bottom: 51px;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-position: bottom;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 7px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 320px 7px;
+  }
 }
 
 .feedback__heading {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 23px;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
 }
 
 .feedback__description {
-  margin: 0 0 35px;
+  margin: 0 0 27px;
   color: #444444;
 }
 
 .feedback__name {
-  margin: 0 0 15px;
+  margin: 0 0 3px;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -28,7 +38,7 @@
 
 .feedback__instagram {
   display: block;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   font-size: 17px;
 }
 
@@ -55,28 +65,28 @@
 
 @media screen and (min-width: $tablet-width) {
   .feedback {
-    position: relative;
-    margin-bottom: 50px;
-    padding-bottom: 135px;
-    background-image:
-      url("../img/review@1x.jpg"),
-      url("../img/bg-zigzag-line.svg");
+    margin-bottom: 48px;
+    padding-bottom: 124px;
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-position:
-      0 0,
-      bottom;
+    background-position: 0 0;
+
+    &::after {
+      height: 17px;
+      background-size: 768px 17px;
+    }
   }
 
   .feedback__heading {
     margin-right: 200px;
     margin-bottom: 50px;
-    padding-top: 85px;
+    padding-top: 76px;
     font-size: 43px;
     line-height: 50px;
   }
 
   .feedback__description {
-    margin-bottom: 55px;
+    margin-bottom: 57px;
     font-size: 17px;
   }
 
@@ -86,7 +96,7 @@
   }
 
   .feedback__name {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 18px;
   }
 
@@ -96,6 +106,7 @@
 
   .feedback__button {
     width: 18px + 50px + 18px;
+    margin-top: 5px;
     margin-bottom: 0;
     border: none;
   }
@@ -103,7 +114,7 @@
   .feedback__write {
     position: absolute;
     top: 80px;
-    right: 50px;
+    right: 47px;
     width: 175px;
     margin-left: 40px;
     font-size: 17px;
@@ -112,22 +123,27 @@
 
 @media screen and (min-width: $desktop-width) {
   .feedback {
-    margin-bottom: 70px;
-    padding-bottom: 190px;
-    background-position:
-      50px 0,
-      bottom;
+    margin-bottom: 72px;
+    padding-bottom: 180px;
+    background-position: 50px 0;
+
+    &::after {
+      right: 50px;
+      left: 50px;
+      height: 23px;
+      background-size: 1050px 23px;
+    }
   }
 
   .feedback__heading {
     margin-left: 175px;
-    padding-top: 80px;
+    padding-top: 70px;
     font-size: 53px;
     line-height: 57px;
   }
 
   .feedback__description {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
     margin-left: 175px;
   }
 
@@ -136,6 +152,11 @@
   }
 
   .feedback__name {
+    margin-bottom: 2px;
     font-size: 17px;
+  }
+
+  .feedback__button {
+    margin-top: 0;
   }
 }

@@ -15,15 +15,6 @@
   width: 86px;
   height: 35px;
   margin: 0 auto;
-
-  &:hover,
-  &:focus {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .main-nav__list {
@@ -67,14 +58,13 @@
     flex-grow: 1;
     order: 5;
     margin: 0;
-    padding: 20px 0;
+    padding: 16px 0;
     padding-right: 50px;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     text-align: right;
     color: #444444;
-    /*background-color: #f9f9f9;*/
     background-color: #f1f1f1;
     border-top: 1px solid #e7e7e7;
 
@@ -99,7 +89,6 @@
   .main-nav__delivery {
     flex-grow: 0;
     width: 525px;
-    /*margin-right: auto;*/
     padding-right: calc(50% - 525px);
     padding-left: 0;
   }

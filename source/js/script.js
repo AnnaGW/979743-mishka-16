@@ -1,8 +1,12 @@
+svg4everybody();
+
 var navMain = document.querySelector(".page-header");
 var navToggle = document.querySelector(".page-header__toggle");
 
 var modalClick = document.querySelectorAll(".js-modalclick");
 var modalWindow = document.querySelector(".modal-in-cart");
+
+svg4everybody();
 
 navMain.classList.remove("page-header--nojs");
 

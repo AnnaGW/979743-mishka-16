@@ -1,12 +1,9 @@
 .sale-list {
-  /*width: 1050px;*/
-  /*margin: 0 auto;*/
   padding: 0 50px;
 }
 
 .sale-list__item {
   display: block;
-  /*padding: 20px 30px;*/
   margin-right: 60px;
   padding: 20px 0;
   font-size: 15px;
@@ -23,12 +20,15 @@
     padding-right: 0;
     padding-left: calc(50% - 525px);
     font-size: 15px;
-    /*background-color: #f9f9f9;*/
     background-color: #f1f1f1;
     border-top: 1px solid #e7e7e7;
 
     &--index {
       background-color: transparent;
     }
+  }
+
+  .sale-list__item {
+    padding: 16px 0;
   }
 }

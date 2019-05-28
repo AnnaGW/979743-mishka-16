@@ -1,11 +1,19 @@
 .week-product {
+  position: relative;
   padding-bottom: 42px;
-  /*font-size: 15px;
-  line-height: 24px;*/
   color: #444444;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-position: bottom;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 7px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 320px 7px;
+  }
 }
 
 .week-product__header {
@@ -15,7 +23,7 @@
 }
 
 .week-product__topic {
-  margin: 0 0 26px;
+  margin: 0 0 23px;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
@@ -25,7 +33,7 @@
 
 .week-product__heading {
   order: -1;
-  margin: 0 0 10px;
+  margin: 0 0 5px;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -33,7 +41,7 @@
 }
 
 .week-product__description {
-  margin: 0 0 25px;
+  margin: 0 0 17px;
   font-size: 15px;
   line-height: 24px;
 }
@@ -54,13 +62,18 @@
     padding-bottom: 70px;
     font-size: 17px;
     line-height: 30px;
+
+    &::after {
+      height: 17px;
+      background-size: 768px 17px;
+    }
   }
 
   .week-product__header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 57px;
+    margin-bottom: 50px;
   }
 
   .week-product__heading {
@@ -72,17 +85,15 @@
   .week-product__topic {
     width: 90px;
     margin: 0;
-    margin-right: 25px;
+    margin-top: 5px;
+    margin-right: 18px;
     line-height: 17px;
     text-align: center;
   }
 
   .week-product__description {
-    /*box-sizing: border-box;
-    width: 50%;*/
     width: 292px;
-    margin-bottom: 40px;
-    /*padding-right: 42px;*/
+    margin-bottom: 34px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -92,11 +103,6 @@
     margin: 0;
   }
 
-  /*.week-product__price {
-    font-size: 20px;
-    line-height: 24px;
-  }*/
-
   .week-product__checkout {
     width: 292px;
     margin: 0;
@@ -105,12 +111,20 @@
 
 @media screen and (min-width: $desktop-width) {
   .week-product {
+    padding-top: 52px;
     padding-bottom: 96px;
+
+    &::after {
+      right: 50px;
+      left: 50px;
+      height: 23px;
+      background-size: 1050px 23px;
+    }
   }
 
   .week-product__header {
     justify-content: flex-start;
-    margin-bottom: 60px;
+    margin-bottom: 49px;
   }
 
   .week-product__heading {
@@ -124,11 +138,12 @@
     width: 175px - 35px - 35px;
     margin: 0;
     padding: 0 35px;
+    padding-top: 10px;
   }
 
   .week-product__description {
     width: 292px;
-    margin-bottom: 55px;
+    margin-bottom: 46px;
     margin-left: 175px;
   }
 

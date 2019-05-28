@@ -1,6 +1,6 @@
 .about {
-  margin-bottom: 60px;
-  padding-top: 30px;
+  margin-bottom: 55px;
+  padding-top: 27px;
 }
 
 .about__heading {
@@ -12,11 +12,11 @@
 
 @media screen and (min-width: $tablet-width) {
   .about {
-    margin-bottom: 84px;
+    margin-bottom: 20px;
+    padding-top: 49px;
   }
 
   .about__heading {
-    margin-top: 60px;
     margin-bottom: 45px;
     font-size: 43px;
     line-height: 50px;
@@ -25,12 +25,13 @@
 
 @media screen and (min-width: $desktop-width) {
   .about {
-    margin-bottom: 88px;
+    margin-bottom: 27px;
+    padding-top: 60px;
   }
 
   .about__heading {
-    margin-top: 70px;
-    margin-bottom: 40px;
+    //margin-top: 70px;
+    margin-bottom: 45px;
     margin-left: 175px;
     font-size: 53px;
     line-height: 57px;

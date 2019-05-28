@@ -74,7 +74,6 @@
   position: relative;
 
   span {
-    //min-width: 62px - 15px;
     padding: 0;
     padding-right: 15px;
     background-color: #ffffff;
@@ -105,6 +104,7 @@
   }
 
   &--contacts {
+    position: relative;
     margin-bottom: 33px;
 
     &::before {
@@ -118,6 +118,24 @@
       background-color: #63d1bb;
     }
   }
+}
+
+.order-form__icon-phone {
+  position: absolute;
+  right: 8px;
+  bottom: 15px;
+  width: 26px;
+  height: 24px;
+  opacity: 0.2;
+}
+
+.order-form__icon-email {
+  position: absolute;
+  right: 4px;
+  bottom: 13px;
+  width: 40px;
+  height: 30px;
+  opacity: 0.2;
 }
 
 .order-form__label {
@@ -182,14 +200,28 @@
   transform: rotate(-45deg);
 }
 
+.order-form__label-reduction + label:hover::before,
+.order-form__label-reduction:focus + label::before {
+  border-color: #63d1bb;
+}
+
+.order-form__label-reduction:checked + label::before {
+  border-color: #000000;
+}
+
+.order-form__label-reduction:checked + label:hover::before,
+.order-form__label-reduction:checked:focus + label::before {
+  border-color: #63d1bb;
+}
+
 .order-form__input {
+  box-sizing: border-box;
   width: 100%;
-  height: 18px;
+  height: 18px + 6px + 17px;
   padding: 0;
   padding-top: 6px;
   padding-bottom: 17px;
   font: inherit;
-  //font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
@@ -201,9 +233,32 @@
     opacity: 0.3;
   }
 
+  &:hover,
+  &:focus {
+    border-color: #63d1bb;
+  }
+
+  &:active {
+    &::placeholder {
+      opacity: 1;
+    }
+  }
+
   &--phone {
+    padding-right: 50px;
     font-size: 19px;
   }
+
+  &--email {
+    padding-right: 50px;
+  }
+}
+
+.order-form__input:hover + svg,
+.order-form__input:focus + svg,
+.order-form__input:active + svg {
+  opacity: 1;
+  fill: #63d1bb;
 }
 
 .order-form__description {
@@ -228,12 +283,22 @@
   &::placeholder {
     opacity: 0.3;
   }
+
+  &:hover,
+  &:focus {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    &::placeholder {
+      opacity: 1;
+    }
+  }
 }
 
 .order-form__button {
   width: 260px;
   margin: 0 auto;
-  //font: inherit;
   background-color: transparent;
 }
 
@@ -298,21 +363,15 @@
 
     &--contacts {
       left: -167px;
-      //width: 150px;
     }
 
     &--addition {
       top: 15px;
-      //width: 150px;
     }
   }
 
   .order-form__group-name--contacts,
   .order-form__group-name--addition {
-    /*&::before {
-      display: none;
-    }*/
-
     span {
       background-color: transparent;
     }
@@ -349,6 +408,14 @@
         display: none;
       }
     }
+  }
+
+  .order-form__icon-phone {
+    right: 25px;
+  }
+
+  .order-form__icon-email {
+    right: 20px;
   }
 
   .order-form__label {
@@ -399,13 +466,20 @@
   }
 
   .order-form__input {
-    height: 18px;
     padding-top: 0;
     padding-bottom: 16px;
     font: inherit;
     font-weight: 400;
     font-size: 19px;
     background-color: transparent;
+
+    &--phone {
+      padding-right: 70px;
+    }
+
+    &--email {
+      padding-right: 70px;
+    }
   }
 
   .order-form__addition {
@@ -468,6 +542,14 @@
     &--color {
       width: 243px;
     }
+  }
+
+  .order-form__icon-phone {
+    right: 8px;
+  }
+
+  .order-form__icon-email {
+    right: 4px;
   }
 
   .order-form__addition {

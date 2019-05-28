@@ -7,18 +7,18 @@
     name="viewport"
     content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
 
   <header class="page-header page-header--closed page-header--nojs">
 
-    <button class="page-header__toggle js-hidden" type="button">
+    <button class="page-header__toggle" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <nav class="main-nav js-show">
-      <a class="main-nav__logo-link" href="index.html">
+    <nav class="main-nav">
+      <a class="main-nav__logo-link reduction-link" href="index.html">
         <picture>
           <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -27,26 +27,36 @@
       </a>
       <ul class="main-nav__list menu-list">
         <li>
-          <a class="menu-list__item menu-list__item--first">Каталог товаров</a>
+          <a class="menu-list__item menu-list__item--first reduction-link">Каталог товаров</a>
         </li>
         <li>
-          <a class="menu-list__item" href="form.html">Вязание на заказ</a>
+          <a class="menu-list__item reduction-link" href="form.html">Вязание на заказ</a>
         </li>
       </ul>
       <ul class="main-nav__list user-list">
         <li>
-          <a class="user-list__item user-list__item--search" href="#">Поиск по сайту</a>
+          <a class="user-list__item user-list__item--search reduction-link__icon" href="#">
+            <svg class="user-list__icon user-list__icon--search" width="18" height="18">
+              <use xlink:href="img/symbols.svg#icon-search">
+              </use>
+            </svg>
+            Поиск по сайту</a>
         </li>
         <li>
-          <a class="user-list__item user-list__item--cart" href="#">Корзина: пока пуста</a>
+          <a class="user-list__item user-list__item--cart reduction-link__icon" href="#">
+            <svg class="user-list__icon user-list__icon--cart">
+              <use xlink:href="img/symbols.svg#icon-cart" width="21" height="18">
+              </use>
+            </svg>
+            Корзина: пока пуста</a>
         </li>
       </ul>
       <ul class="main-nav__list sale-list hidden-for-mobile-tablet">
         <li>
-          <a class="sale-list__item sale-list__item--first" href="#">Новые поступления</a>
+          <a class="sale-list__item sale-list__item--first reduction-link" href="#">Новые поступления</a>
         </li>
         <li>
-          <a class="sale-list__item" href="#">Распродажа</a>
+          <a class="sale-list__item reduction-link" href="#">Распродажа</a>
         </li>
       </ul>
       <p class="main-nav__delivery hidden-for-mobile">Бесплатная доставка по России</p>
@@ -69,12 +79,16 @@
             </picture>
           </a>
           <div class="card-product__header-wrapper">
-            <a class="card-product__name" href="#">Зайчик-попрыгайчик</a>
+            <a class="card-product__name reduction-link" href="#">Зайчик-попрыгайчик</a>
             <p class="card-product__params">Рост 30 см, вес 200 г</p>
           </div>
           <div class="card-product__price-wrapper">
             <p class="card-product__price">1 200 руб.</p>
-            <a class="card-product__in-cart js-modalclick">
+            <a class="card-product__in-cart reduction-link__icon js-modalclick" href="#">
+              <svg class="card-product__icon" viewBox="0 0 21 20" width="21" height="20">
+                <use xlink:href="img/symbols.svg#icon-cart">
+                </use>
+              </svg>
               <span class="visually-hidden">Положить в корзину</span>
             </a>
           </div>
@@ -91,12 +105,16 @@
             </picture>
           </a>
           <div class="card-product__header-wrapper">
-            <a class="card-product__name" href="#">Корзинка для белья</a>
+            <a class="card-product__name reduction-link" href="#">Корзинка для белья</a>
             <p class="card-product__params">Диаметр 30 см, высота 10 см</p>
           </div>
           <div class="card-product__price-wrapper">
             <p class="card-product__price">690 руб.</p>
-            <a class="card-product__in-cart js-modalclick">
+            <a class="card-product__in-cart reduction-link__icon js-modalclick" href="#">
+              <svg class="card-product__icon" viewBox="0 0 21 20" width="21" height="20">
+                <use xlink:href="img/symbols.svg#icon-cart">
+                </use>
+              </svg>
               <span class="visually-hidden">Положить в корзину</span>
             </a>
           </div>
@@ -113,12 +131,16 @@
             </picture>
           </a>
           <div class="card-product__header-wrapper">
-            <a class="card-product__name" href="#">Большая корзинка для игрушек</a>
+            <a class="card-product__name reduction-link" href="#">Большая корзинка для игрушек</a>
             <p class="card-product__params">Диаметр 30 см, высота 30 см</p>
           </div>
           <div class="card-product__price-wrapper">
             <p class="card-product__price">1 500 руб.</p>
-            <a class="card-product__in-cart js-modalclick">
+            <a class="card-product__in-cart reduction-link__icon js-modalclick" href="#">
+              <svg class="card-product__icon" viewBox="0 0 21 20" width="21" height="20">
+                <use xlink:href="img/symbols.svg#icon-cart">
+                </use>
+              </svg>
               <span class="visually-hidden">Положить в корзину</span>
             </a>
           </div>
@@ -144,22 +166,37 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__inner container">
-      <a class="page-footer__logo hidden-for-mobile" href="index.html">
-        <img src="img/logo-footer.svg" width="102" height="34" alt="Магазин товаров ручной работы Мишка">
+      <a class="page-footer__logo reduction-link__icon hidden-for-mobile" href="index.html">
+        <svg class="page-footer__logo-img" viewBox="0 0 102 34" width="102" height="34">
+          <use xlink:href="img/symbols.svg#logo-footer">
+          </use>
+        </svg>
       </a>
       <ul class="page-footer__list social-list">
           <li>
-            <a class="social-list__item social-list__item--insta" href="#">
+            <a class="social-list__item reduction-link__icon" href="#">
+              <svg class="social-list__item-icon" width="23" height="23">
+                <use xlink:href="img/symbols.svg#icon-insta">
+                </use>
+              </svg>
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
           <li>
-            <a class="social-list__item social-list__item--fb" href="#">
+            <a class="social-list__item reduction-link__icon" href="#">
+              <svg class="social-list__item-icon status-icon" width="23" height="23">
+                <use xlink:href="img/symbols.svg#icon-fb">
+                </use>
+              </svg>
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li>
-            <a class="social-list__item social-list__item--twitter" href="#">
+            <a class="social-list__item reduction-link__icon" href="#">
+              <svg class="social-list__item-icon status-icon" width="23" height="23">
+                <use xlink:href="img/symbols.svg#icon-twitter">
+                </use>
+              </svg>
               <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
@@ -167,7 +204,10 @@
       <p class="page-footer__developer">
         <span class="page-footer__developer-label">Разработано</span>
         <a class="page-footer__developer-logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/htmlacademy.svg" alt="Логотип разработчика html Академия">
+          <svg class="page-footer__developer-img" viewBox="0 0 34 34" width="34" height="34">
+            <use xlink:href="img/symbols.svg#logo-htmlacademy">
+            </use>
+          </svg>
         </a>
       </p>
     </div>
@@ -198,7 +238,7 @@
     </form>
   </section>
 
-  <script src="js/scripts.js"></script>
+  <script src="js/script.min.js"></script>
 
 </body>
 

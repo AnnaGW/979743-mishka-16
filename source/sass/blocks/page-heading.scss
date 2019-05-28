@@ -11,8 +11,9 @@
 
 @media screen and (min-width: $tablet-width) {
   .page-heading {
-    margin-bottom: 80px;
-    padding: 55px 50px;
+    margin-bottom: 63px;
+    padding: 40px 50px;
+    padding-bottom: 90px;
     font-size: 43px;
     line-height: 50px;
     background-image: url("../img/bg-zigzag-fill.svg");
@@ -24,8 +25,9 @@
 
 @media screen and (min-width: $desktop-width) {
   .page-heading {
-    margin-bottom: 132px;
-    padding: 65px 50px;
+    margin-bottom: 115px;
+    padding: 35px 50px;
+    padding-bottom: 120px;
     font-size: 53px;
     line-height: 57px;
   }

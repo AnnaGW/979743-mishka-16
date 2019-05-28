@@ -1,49 +1,11 @@
 .promo {
-  margin-bottom: 30px;
-  /*background-color: #f9f9f9;
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% -17px;*/
-  /*border-top: 1px solid #ececec;*/
+  margin-bottom: 27px;
 }
-
-/*.promo__heading {
-  min-height: 90px;
-  margin-top: 70px;
-  margin-bottom: 122px;
-  font-weight: 700;
-  font-size: 27px;
-  line-height: 30px;
-  text-align: center;
-  color: #010000;
-}*/
 
 .promo__list {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.promo__unit {
-  display: block;
-  width: 130px;
-  margin: 0 auto;
-  padding: 27px 130px;
-  padding-left: 0;
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 24px;
-  color: #ffffff;
-  background-repeat: no-repeat;
-  background-position: right center;
-
-  &--interior {
-    background-image: url("../img/icon-interior.svg");
-  }
-
-  &--toy {
-    background-image: url("../img/icon-toy.svg");
-  }
 }
 
 .promo__list li:nth-child(odd) {
@@ -54,63 +16,140 @@
   background-color: #56c3b2;
 }
 
-@media screen and (min-width: $tablet-width) {
-  .promo {
-    margin-bottom: 50px;
-    background-color: #f9f9f9;
-    /*padding-top: 95px;*/
-    /*background-image: url("../img/hero-tablet@1x.jpg");
-    background-position: 50% -60px;
-    border: none;*/
+.promo__unit {
+  position: relative;
+  display: block;
+  min-height: 102px - 27px - 27px;
+  margin: 0 auto;
+  //padding: 27px 30px;
+  padding-top: 25px;
+  padding-right: 130px;
+  padding-bottom: 30px;
+  padding-left: 28px;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: inherit;
+  background-repeat: no-repeat;
+  background-position: right center;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-5px);
   }
 
-  /*.promo__heading {
-    min-height: 100px;
-    margin-top: 0;
-    margin-bottom: 370px;
-    font-size: 43px;
-    line-height: 50px;
-  }*/
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.promo__unit__icon {
+  position: absolute;
+  opacity: 0.5;
+
+  &--interior {
+    top: 22px;
+    right: 38px;
+    width: 41px;
+    height: 63px;
+  }
+
+  &--toy {
+    top: 21px;
+    right: 28px;
+    width: 61px;
+    height: 61px;
+  }
+}
+
+.promo__unit:hover .promo__unit__icon,
+.promo__unit:focus .promo__unit__icon {
+  opacity: 0.7;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .promo {
+    position: relative;
+    margin: 0;
+    margin-bottom: 45px;
+    background-color: #f9f9f9;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -12px;
+      left: 0;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: 768px 24px;
+    }
+  }
 
   .promo__list {
     display: flex;
     flex-wrap: wrap;
     margin: 0 50px;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-position: bottom;
   }
 
   .promo__list li {
     box-sizing: border-box;
     width: 50%;
-    padding-right: 35px;
+    padding-bottom: 30px;
   }
 
   .promo__unit {
     width: 167px;
     min-height: 60px;
     margin: 0;
-    padding-top: 30px;
+    padding-top: 28px;
     padding-right: calc(100% - 35px - 167px);
-    padding-bottom: 15px;
+    padding-bottom: 0;
     padding-left: 35px;
     font-size: 20px;
     line-height: 30px;
+    background-color: inherit;
+  }
+}
+
+.promo__unit__icon {
+  &--interior {
+    top: 27px;
+    right: 36px;
+  }
+
+  &--toy {
+    top: 30px;
+    right: 30px;
   }
 }
 
 @media screen and (min-width: $desktop-width) {
   .promo {
-    margin-bottom: 130px;
-    /*background-image: url("../img/hero-desktop@1x.jpg");
-    background-position: 50% -60px;*/
+    margin-bottom: 73px;
+
+    &::after {
+      bottom: -17px;
+      height: 34px;
+      background-size: auto 37px;
+    }
   }
 
   .promo__list {
     width: 1050px;
     margin: 0 auto;
+  }
 
+  .promo__unit__icon {
+    &--interior {
+      top: 30px;
+    }
 
+    &--toy {
+      top: 31px;
+      right: 32px;
+    }
   }
 }
