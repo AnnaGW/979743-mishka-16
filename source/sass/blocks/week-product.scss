@@ -1,6 +1,19 @@
 .week-product {
-  padding-bottom: 42px - 6px;
+  position: relative;
+  padding-bottom: 42px;
   color: #444444;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 7px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 320px 7px;
+  }
 }
 
 .week-product__header {
@@ -49,6 +62,11 @@
     padding-bottom: 70px;
     font-size: 17px;
     line-height: 30px;
+
+    &::after {
+      height: 17px;
+      background-size: 768px 17px;
+    }
   }
 
   .week-product__header {
@@ -93,6 +111,13 @@
 @media screen and (min-width: $desktop-width) {
   .week-product {
     padding-bottom: 96px;
+
+    &::after {
+      right: 50px;
+      left: 50px;
+      height: 23px;
+      background-size: 1050px 23px;
+    }
   }
 
   .week-product__header {

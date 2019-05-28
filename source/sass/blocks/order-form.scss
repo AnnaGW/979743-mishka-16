@@ -122,8 +122,8 @@
 
 .order-form__icon-phone {
   position: absolute;
-  bottom: 15px;
   right: 8px;
+  bottom: 15px;
   width: 26px;
   height: 24px;
   opacity: 0.2;
@@ -131,14 +131,12 @@
 
 .order-form__icon-email {
   position: absolute;
-  bottom: 13px;
   right: 4px;
+  bottom: 13px;
   width: 40px;
   height: 30px;
   opacity: 0.2;
 }
-
-
 
 .order-form__label {
   position: relative;
@@ -245,7 +243,7 @@
     &::placeholder {
       opacity: 1;
     }
-}
+  }
 
   &--phone {
     padding-right: 50px;

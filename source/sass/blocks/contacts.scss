@@ -1,6 +1,6 @@
 .contacts {
   position: relative;
-  margin-top: 42px;
+  //margin-top: 42px;
   margin-bottom: 40px;
 }
 
@@ -50,6 +50,7 @@
 }
 
 .contacts__map-wrapper {
+  position: relative;
   margin-bottom: 40px;
   background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -72,9 +73,22 @@
   margin: 0 auto;
 }
 
+.contacts__map-pin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 67px;
+  height: 101px;
+  margin-top: -101px;
+  margin-left: -33px;
+  background-image: url("../img/icon-map-pin.svg");
+  background-repeat: no-repeat;
+}
+
+
 @media screen and (min-width: $tablet-width) {
   .contacts {
-    margin-top: 50px;
+    //margin-top: 50px;
     margin-bottom: 55px;
     padding-top: 20px;
     background-image: url("../img/icon-flag.svg");
@@ -113,9 +127,9 @@
 @media screen and (min-width: $desktop-width) {
   .contacts {
     position: relative;
-    width: 350px;
+    width: 350px - 50px;
     margin: 0 auto;
-    margin-top: 70px;
+    //margin-top: 70px;
     margin-bottom: 105px;
     padding: 0;
     padding-right: 50px + 525px + 50px;

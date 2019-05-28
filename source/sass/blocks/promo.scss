@@ -69,25 +69,37 @@
 
 @media screen and (min-width: $tablet-width) {
   .promo {
-    margin-bottom: 50px;
     position: relative;
     margin: 0;
+    margin-bottom: 50px;
     background-color: #f9f9f9;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -12px;
+      left: 0;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: 768px 24px;
+    }
   }
 
   .promo__list {
     display: flex;
     flex-wrap: wrap;
     margin: 0 50px;
-    background-image: url("../img/bg-zigzag-line.svg");
+    /*background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
-    background-position: bottom;
+    background-position: bottom;*/
   }
 
   .promo__list li {
     box-sizing: border-box;
     width: 50%;
-    padding-bottom: 34px;
+    padding-bottom: 30px;
     //padding-right: 35px;
   }
 
@@ -95,7 +107,7 @@
     width: 167px;
     min-height: 60px;
     margin: 0;
-    padding-top: 30px;
+    padding-top: 28px;
     padding-right: calc(100% - 35px - 167px);
     //padding-bottom: 15px;
     padding-bottom: 0; //
@@ -110,21 +122,27 @@
     }*/
   }
 
-  .promo__zigzag-fill {
+  /*.promo__zigzag-fill {
     position: absolute;
     bottom: -3px;
+    z-index: 2;
     width: 100%;
     height: 34px;
-  //  margin-top: 0;
+    //  margin-top: 0;
     fill: #ffffff;
-    z-index: 2;
     //background-color: #63d1bb;
-  }
+  }*/
 }
 
 @media screen and (min-width: $desktop-width) {
   .promo {
     margin-bottom: 130px;
+
+    &::after {
+      bottom: -17px;
+      height: 34px;
+      background-size: auto 37px;
+    }
   }
 
   .promo__list {
