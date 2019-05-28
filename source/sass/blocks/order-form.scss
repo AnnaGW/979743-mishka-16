@@ -222,7 +222,6 @@
   padding-top: 6px;
   padding-bottom: 17px;
   font: inherit;
-  //font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
@@ -300,7 +299,6 @@
 .order-form__button {
   width: 260px;
   margin: 0 auto;
-  //font: inherit;
   background-color: transparent;
 }
 
@@ -365,21 +363,15 @@
 
     &--contacts {
       left: -167px;
-      //width: 150px;
     }
 
     &--addition {
       top: 15px;
-      //width: 150px;
     }
   }
 
   .order-form__group-name--contacts,
   .order-form__group-name--addition {
-    /*&::before {
-      display: none;
-    }*/
-
     span {
       background-color: transparent;
     }
@@ -474,7 +466,6 @@
   }
 
   .order-form__input {
-    //height: 18px;
     padding-top: 0;
     padding-bottom: 16px;
     font: inherit;

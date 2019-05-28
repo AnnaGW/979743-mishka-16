@@ -1,5 +1,5 @@
 .promo {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .promo__list {
@@ -19,14 +19,13 @@
 .promo__unit {
   position: relative;
   display: block;
-  //width: 100%; //
-  //width: 130px;
   min-height: 102px - 27px - 27px;
   margin: 0 auto;
-  //padding: 27px 130px;
-  padding: 27px 30px; //
-  //padding-left: 0;
-  padding-right: 130px; //
+  //padding: 27px 30px;
+  padding-top: 25px;
+  padding-right: 130px;
+  padding-bottom: 30px;
+  padding-left: 28px;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
@@ -50,13 +49,15 @@
   opacity: 0.5;
 
   &--interior {
-    right: 6px + 35px;
+    top: 22px;
+    right: 38px;
     width: 41px;
     height: 63px;
   }
 
   &--toy {
-    right: -3px + 35px;
+    top: 21px;
+    right: 28px;
     width: 61px;
     height: 61px;
   }
@@ -71,7 +72,7 @@
   .promo {
     position: relative;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
     background-color: #f9f9f9;
 
     &::after {
@@ -91,16 +92,12 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 50px;
-    /*background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-position: bottom;*/
   }
 
   .promo__list li {
     box-sizing: border-box;
     width: 50%;
     padding-bottom: 30px;
-    //padding-right: 35px;
   }
 
   .promo__unit {
@@ -109,34 +106,29 @@
     margin: 0;
     padding-top: 28px;
     padding-right: calc(100% - 35px - 167px);
-    //padding-bottom: 15px;
-    padding-bottom: 0; //
+    padding-bottom: 0;
     padding-left: 35px;
     font-size: 20px;
     line-height: 30px;
     background-color: inherit;
+  }
+}
 
-    /*&:hover,
-    &:focus {
-      transform: translateY(-5px);
-    }*/
+.promo__unit__icon {
+  &--interior {
+    top: 27px;
+    right: 36px;
   }
 
-  /*.promo__zigzag-fill {
-    position: absolute;
-    bottom: -3px;
-    z-index: 2;
-    width: 100%;
-    height: 34px;
-    //  margin-top: 0;
-    fill: #ffffff;
-    //background-color: #63d1bb;
-  }*/
+  &--toy {
+    top: 30px;
+    right: 30px;
+  }
 }
 
 @media screen and (min-width: $desktop-width) {
   .promo {
-    margin-bottom: 130px;
+    margin-bottom: 73px;
 
     &::after {
       bottom: -17px;
@@ -148,5 +140,16 @@
   .promo__list {
     width: 1050px;
     margin: 0 auto;
+  }
+
+  .promo__unit__icon {
+    &--interior {
+      top: 30px;
+    }
+
+    &--toy {
+      top: 31px;
+      right: 32px;
+    }
   }
 }

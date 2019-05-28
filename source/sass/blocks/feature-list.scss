@@ -5,7 +5,7 @@
 }
 
 .feature-list__item {
-  margin-bottom: 33px;
+  margin-bottom: 30px;
   padding-top: 58px;
   font-weight: 700;
   font-size: 17px;
@@ -15,26 +15,42 @@
 
   &--materials {
     background-image: url("../img/icon-feature-flower.svg");
+    background-position: 10px 2px;
   }
 
   &--price {
+    margin-bottom: 30px;
+    padding-top: 54px;
     background-image: url("../img/icon-feature-money.svg");
+    background-position: 0 0;
   }
 
   &--like {
+    margin-bottom: 30px;
+    padding-top: 52px;
     background-image: url("../img/icon-feature-heart.svg");
+    background-position: 8px 0;
   }
 
   &--love {
+    margin-bottom: 30px;
+    padding-top: 54px;
     background-image: url("../img/icon-feature-ball.svg");
+    background-position: 0 0;
   }
 
   &--domestic {
+    margin-bottom: 30px;
+    padding-top: 52px;
     background-image: url("../img/icon-feature-rocket.svg");
+    background-position: -5px 0;
   }
 
   &--gift {
+    margin-bottom: 30px;
+    padding-top: 53px;
     background-image: url("../img/icon-feature-gift.svg");
+    background-position: 3px 0;
   }
 }
 
@@ -51,8 +67,13 @@
     font-size: 20px;
     line-height: 22px;
 
+    &--materials {
+      margin-bottom: 56px;
+    }
+
     &--price {
       order: 2;
+      margin-bottom: 60px;
     }
 
     &--like {
@@ -61,14 +82,18 @@
 
     &--love {
       order: 1;
+      margin-bottom: 56px;
+      background-position: 5px 5px;
     }
 
     &--domestic {
       order: 3;
+      background-position: -3px 5px;
     }
 
     &--gift {
       order: 5;
+      margin-bottom: 60px;
     }
   }
 }
