@@ -64,7 +64,7 @@
   background-position: center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("img/map-mobile@2x.jpg");
+    background-image: url("../img/map-mobile@2x.jpg");
     background-size: 322px auto;
   }
 }
@@ -126,7 +126,7 @@
     background-image: url("../img/map-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("img/map-tablet@2x.jpg");
+      background-image: url("../img/map-tablet@2x.jpg");
       background-size: 768px auto;
     }
   }
