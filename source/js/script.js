@@ -1,6 +1,9 @@
 svg4everybody();
 
 var navMain = document.querySelector(".page-header");
+
+var contactsMap = document.querySelector(".contacts__map-external");
+
 var navToggle = document.querySelector(".page-header__toggle");
 
 var modalClick = document.querySelectorAll(".js-modalclick");
@@ -9,6 +12,8 @@ var modalWindow = document.querySelector(".modal-in-cart");
 svg4everybody();
 
 navMain.classList.remove("page-header--nojs");
+contactsMap.classList.remove("hidden");
+
 
 navToggle.addEventListener('click', function() {
   if (navMain.classList.contains("page-header--closed")) {

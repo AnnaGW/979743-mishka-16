@@ -17,8 +17,8 @@
 @media screen and (max-width: $tablet-width - 1) {
   .page-header--closed .page-header__toggle {
     position: absolute;
-    top: 33px;
-    right: 27px;
+    top: 32px;
+    right: 31px;
     z-index: 2;
     display: block;
     width: 20px;
@@ -75,9 +75,9 @@
   border-top: 1px solid #ececec;
 }
 
-.page-header__description br:first-child {
+/*.page-header__description br:first-child {
   display: none;
-}
+}*/
 
 @media screen and (min-width: $tablet-width) {
   .page-header {

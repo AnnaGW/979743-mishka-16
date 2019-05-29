@@ -8,7 +8,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: -8px;
     height: 7px;
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
@@ -33,7 +33,7 @@
 
 .week-product__heading {
   order: -1;
-  margin: 0 0 5px;
+  margin: -1px 0 5px;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -64,6 +64,7 @@
     line-height: 30px;
 
     &::after {
+      left: 0;
       height: 17px;
       background-position: 20px 0;
       background-size: 768px 17px;
@@ -79,6 +80,7 @@
 
   .week-product__heading {
     margin: 0;
+    margin-left: -3px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -107,6 +109,7 @@
   .week-product__checkout {
     width: 292px;
     margin: 0;
+    margin-left: -2px;
   }
 }
 
@@ -127,12 +130,13 @@
   .week-product__header {
     justify-content: flex-start;
     margin-bottom: 49px;
-    margin-left: -5px;
+    margin-left: -1px;
   }
 
   .week-product__heading {
     z-index: 2;
     order: 0;
+    margin-left: 5px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -140,8 +144,8 @@
   .week-product__topic {
     width: 175px - 35px - 35px;
     margin: 0;
-    padding: 0 35px;
-    padding-top: 10px;
+    padding: 0 31px;
+    padding-top: 7px;
   }
 
   .week-product__description {

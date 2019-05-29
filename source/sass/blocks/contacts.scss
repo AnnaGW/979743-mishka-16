@@ -5,6 +5,7 @@
 
 .contacts__heading {
   margin: 0 0 25px;
+  margin-left: -2px;
   padding: 0 30px;
   font-weight: 700;
   font-size: 18px;
@@ -34,9 +35,11 @@
   width: calc(100% - 80px);
   margin: 0;
   margin-bottom: 30px;
+  //padding-bottom: 2px;
 }
 
 .contacts__email-link {
+  padding-bottom: 3px;
   border-bottom: 1px solid #62d1ba;
 
   &:hover,
@@ -52,7 +55,9 @@
 
 .contacts__map-wrapper {
   position: relative;
-  margin-bottom: 40px;
+  width: 100%;
+  min-height: 457px;
+  margin-bottom: 39px;
   background-color: #f9f9f9;
   background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -94,7 +99,7 @@
     padding-top: 15px;
     background-image: url("../img/icon-flag.svg");
     background-repeat: no-repeat;
-    background-position: right 54px top -1px;
+    background-position: right 53px top -1px;
   }
 
   .contacts__heading {
@@ -156,11 +161,11 @@
   }
 
   .contacts__email {
-    width: 220px;
+    width: 225px;
   }
 
   .contacts__address {
-    width: 210px;
+    width: 225px;
   }
 
   .contacts__map-wrapper {
@@ -168,6 +173,7 @@
     top: 0;
     right: 50px;
     width: 525px;
+    min-height: 457px;
     margin: 0;
     background-image: url("../img/map-desktop@1x.jpg");
 

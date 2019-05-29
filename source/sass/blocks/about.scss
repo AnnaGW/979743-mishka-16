@@ -4,7 +4,8 @@
 }
 
 .about__heading {
-  margin: 0 0 30px;
+  margin: 0 0 28px;
+  margin-left: -2px;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -12,8 +13,8 @@
 
 @media screen and (min-width: $tablet-width) {
   .about {
-    margin-bottom: 22px;
-    padding-top: 49px;
+    margin-bottom: 24px;
+    padding-top: 48px;
   }
 
   .about__heading {
@@ -31,9 +32,9 @@
   }
 
   .about__heading {
-    margin-top: -1px;
+    //margin-top: -1px;
     margin-bottom: 45px;
-    margin-left: 170px;
+    margin-left: 171px;
     font-size: 53px;
     line-height: 57px;
   }

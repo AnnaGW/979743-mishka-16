@@ -10,6 +10,16 @@
   background-color: #ffffff;
 }
 
+.main-nav__logo-link:hover picture,
+.main-nav__logo-link:focus picture {
+  opacity: 0.6;
+}
+
+.main-nav__logo-link:active picture {
+  opacity: 0.3;
+}
+
+
 .main-nav__logo-image {
   display: block;
   width: 86px;
