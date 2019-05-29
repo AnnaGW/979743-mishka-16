@@ -54,7 +54,7 @@
 
   .page-footer__logo {
     display: block;
-    width: 188px;
+    width: 185px;
     padding-top: 5px;
   }
 
@@ -64,10 +64,10 @@
   }
 
   .page-footer__developer {
-    justify-content: flex-end;
-    width: 188px;
+    //justify-content: flex-end;
+    width: 185px;
     margin: 0;
     padding: 0;
-    padding-top: 15px;
+    padding-top: 10px;
   }
 }

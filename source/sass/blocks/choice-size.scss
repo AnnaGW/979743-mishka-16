@@ -36,7 +36,7 @@
 }
 
 
-[type="radio"]:checked + .choice-size__label {
+.choice-size__item [type="radio"]:checked + .choice-size__label {
   border-color: #63d1bb;
 
   &:hover,
@@ -52,6 +52,12 @@
   color: #ffffff;
   background-color: #63d1bb;
   border-color: #63d1bb;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: #444444;
+  }
 }
 
 @media screen and (min-width: $tablet-width) {

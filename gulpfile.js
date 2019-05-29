@@ -155,18 +155,18 @@ gulp.task("server", function () {
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css:lint", "css", "refresh"));
   gulp.watch("source/js/**/*.js", gulp.series("script:lint", "script", "refresh"));
- gulp.watch("source/img/symbols/*.svg", gulp.series("sprite", "refresh"));
- gulp.watch("source/img/*.{jpg,png,svg}", gulp.series("images", "refresh"));
- gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  gulp.watch("source/img/symbols/*.svg", gulp.series("sprite", "refresh"));
+  gulp.watch("source/img/*.{jpg,png,svg}", gulp.series("images", "refresh"));
+  gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
- gulp.task("build", gulp.series("clean", gulp.parallel(
-   "html",
-   "css",
-   "script",
-   "images",
-   "sprite",
-   "fonts"
- )));
+  gulp.task("build", gulp.series("clean", gulp.parallel(
+  "html",
+  "css",
+  "script",
+  "images",
+  "sprite",
+  "fonts"
+  )));
 
- gulp.task("start", gulp.series("build", "server"));
+  gulp.task("start", gulp.series("build", "server"));

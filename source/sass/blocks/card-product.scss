@@ -49,7 +49,7 @@
 
 .card-product__price {
   margin: 0;
-  padding: 24px 0;
+  padding: 20px 0;
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
@@ -75,7 +75,7 @@
   .card-product {
     position: relative;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 54px;
   }
 
   .card-product__image-link {
@@ -86,10 +86,10 @@
   }
 
   .card-product__header-wrapper {
-    min-height: 261px - 30px;
+    min-height: 234px;
     margin-right: 27px;
     margin-left: 334px + 27px;
-    padding-top: 30px;
+    padding-top: 25px;
   }
 
   .card-product__name {
@@ -111,10 +111,13 @@
   }
 
   .card-product__price {
+    padding: 23px 0;
+    padding-left: 3px;
     font-size: 17px;
   }
 
   .card-product__in-cart {
+    margin-right: 30px;
     background-position: right 33px top 50%;
   }
 }
@@ -123,7 +126,7 @@
   .card-product {
     width: 316px;
     margin: 0;
-    margin-bottom: 58px;
+    margin-bottom: 57px;
   }
 
   .card-product__image-link {
@@ -135,12 +138,12 @@
   }
 
   .card-product__header-wrapper {
-    min-height: 122px - 30px;
+    min-height: 97px;
     margin: 0 28px;
   }
 
   .card-product__name {
-    margin-bottom: 2px;
+    margin-bottom: 5px;
   }
 
   .card-product__params {
@@ -149,5 +152,9 @@
 
   .card-product__price-wrapper {
     margin-left: 27px;
+  }
+
+  .card-product__price {
+    padding: 22px 0;
   }
 }

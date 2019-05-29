@@ -15,7 +15,7 @@
     background-image: url("../img/video-mobile@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("img/video-mobile@2x.jpg");
+      background-image: url("../img/video-mobile@2x.jpg");
       background-size: 260px auto;
     }
   }
@@ -75,7 +75,7 @@
       background-image: url("../img/video-tablet@1x.jpg");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("img/video-tablet@2x.jpg");
+        background-image: url("../img/video-tablet@2x.jpg");
         background-size: 668px auto;
       }
     }
@@ -93,7 +93,9 @@
 
   .manufacturing__heading {
     margin-top: 455px;
-    padding: 38px 0;
+    padding: 0 0;
+    padding-top: 36px;
+    padding-bottom: 32px;
     padding-left: 108px;
     font-size: 20px;
     background-position: 40px 50%;
@@ -105,8 +107,10 @@
   }
 
   .manufacturing__description {
-    margin-bottom: 48px;
+    margin-bottom: 36px;
     padding: 0 40px;
+    font-size: 15px;
+    line-height: 30px;
   }
 
   .manufacturing__checkout {
@@ -118,7 +122,7 @@
 @media screen and (min-width: $desktop-width) {
   .manufacturing {
     width: 1050px;
-    margin-bottom: 125px;
+    margin-bottom: 105px;
 
     &::after {
       top: 0;
@@ -128,7 +132,7 @@
       background-image: url("../img/video-desktop@1x.jpg");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("img/video-desktop@2x.jpg");
+        background-image: url("../img/video-desktop@2x.jpg");
         background-size: 682px auto;
       }
     }
@@ -157,15 +161,16 @@
     width: 230px;
     margin: 0;
     margin-left: 760px;
-    padding: 30px 0;
-    padding-top: 100px;
-    background-position: 0 45px;
+    padding: 0;
+    padding-top: 95px;
+    padding-bottom: 32px;
+    background-position: 0 40px;
   }
 
   .manufacturing__description {
     width: 230px;
     margin: 0;
-    margin-bottom: 45px;
+    margin-bottom: 47px;
     margin-left: 760px;
     padding: 0;
   }
@@ -173,6 +178,6 @@
   .manufacturing__checkout {
     width: 230px;
     margin-bottom: 60px;
-    margin-left: 760px;
+    margin-left: 762px;
   }
 }

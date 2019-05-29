@@ -13,34 +13,6 @@
   clip: rect(0 0 0 0);
 }
 
-.reduction-link {
-  &:hover,
-  &:focus {
-    opacity: 0.6;
-    //color: rgba(#000000, 0.6);
-  }
-
-  &:active {
-    opacity: 0.3;
-    //color: rgba(#000000, 0.3);
-  }
-}
-
-.reduction-link__icon svg {
-  //opacity: 0.2;
-  //fill: #231f20;
-}
-
-.reduction-link__icon:hover svg,
-.reduction-link__icon:focus svg {
-  opacity: 1;
-  fill: #63d1bb;
-}
-
-.reduction-link__icon:active svg {
-  opacity: 0.3;
-}
-
 @media screen and (max-width: $tablet-width - 1) {
   .hidden-for-mobile {
     position: absolute;

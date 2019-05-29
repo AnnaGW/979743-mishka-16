@@ -21,11 +21,7 @@
   display: block;
   min-height: 102px - 27px - 27px;
   margin: 0 auto;
-  //padding: 27px 30px;
-  padding-top: 25px;
-  padding-right: 130px;
-  padding-bottom: 30px;
-  padding-left: 28px;
+  padding: 25px 130px 30px 28px;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
@@ -34,8 +30,8 @@
   background-repeat: no-repeat;
   background-position: right center;
 
-  &:hover,
-  &:focus {
+  &:focus,
+  &:hover {
     transform: translateY(-5px);
   }
 
@@ -47,6 +43,7 @@
 .promo__unit__icon {
   position: absolute;
   opacity: 0.5;
+  fill: #149080;
 
   &--interior {
     top: 22px;
@@ -63,16 +60,15 @@
   }
 }
 
-.promo__unit:hover .promo__unit__icon,
-.promo__unit:focus .promo__unit__icon {
+.promo__unit:focus .promo__unit__icon,
+.promo__unit:hover .promo__unit__icon {
   opacity: 0.7;
 }
 
 @media screen and (min-width: $tablet-width) {
   .promo {
     position: relative;
-    margin: 0;
-    margin-bottom: 45px;
+    margin: 0 0 45px;
     background-color: #f9f9f9;
 
     &::after {
@@ -104,25 +100,22 @@
     width: 167px;
     min-height: 60px;
     margin: 0;
-    padding-top: 28px;
-    padding-right: calc(100% - 35px - 167px);
-    padding-bottom: 0;
-    padding-left: 35px;
+    padding: 28px calc(100% - 35px - 167px) 0 35px;
     font-size: 20px;
     line-height: 30px;
     background-color: inherit;
   }
-}
 
-.promo__unit__icon {
-  &--interior {
-    top: 27px;
-    right: 36px;
-  }
+  .promo__unit__icon {
+    &--interior {
+      top: 27px;
+      right: 36px;
+    }
 
-  &--toy {
-    top: 30px;
-    right: 30px;
+    &--toy {
+      top: 30px;
+      right: 30px;
+    }
   }
 }
 
@@ -133,6 +126,7 @@
     &::after {
       bottom: -17px;
       height: 34px;
+      background-position: 10px 0;
       background-size: auto 37px;
     }
   }

@@ -65,6 +65,7 @@
 
     &::after {
       height: 17px;
+      background-position: 20px 0;
       background-size: 768px 17px;
     }
   }
@@ -118,6 +119,7 @@
       right: 50px;
       left: 50px;
       height: 23px;
+      background-position: 26px 0;
       background-size: 1050px 23px;
     }
   }
@@ -125,6 +127,7 @@
   .week-product__header {
     justify-content: flex-start;
     margin-bottom: 49px;
+    margin-left: -5px;
   }
 
   .week-product__heading {

@@ -43,7 +43,7 @@
 }
 
 .feedback__button {
-  width: 131px;
+  width: 130px;
   height: 50px;
   margin-bottom: 38px;
   padding: 0;
@@ -73,6 +73,7 @@
 
     &::after {
       height: 17px;
+      background-position: 20px 0;
       background-size: 768px 17px;
     }
   }
@@ -80,6 +81,7 @@
   .feedback__heading {
     margin-right: 200px;
     margin-bottom: 50px;
+    margin-left: -5px;
     padding-top: 76px;
     font-size: 43px;
     line-height: 50px;
@@ -114,7 +116,7 @@
   .feedback__write {
     position: absolute;
     top: 80px;
-    right: 47px;
+    right: 50px;
     width: 175px;
     margin-left: 40px;
     font-size: 17px;
@@ -131,13 +133,15 @@
       right: 50px;
       left: 50px;
       height: 23px;
+      background-position: 24px 0;
       background-size: 1050px 23px;
     }
   }
 
   .feedback__heading {
-    margin-left: 175px;
-    padding-top: 70px;
+    margin-bottom: 46px;
+    margin-left: 170px;
+    padding-top: 74px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -145,6 +149,7 @@
   .feedback__description {
     margin-bottom: 40px;
     margin-left: 175px;
+    padding-right: 105px;
   }
 
   .feedback__positioning {
@@ -157,6 +162,6 @@
   }
 
   .feedback__button {
-    margin-top: 0;
+    margin-top: 3px;
   }
 }

@@ -75,6 +75,10 @@
   border-top: 1px solid #ececec;
 }
 
+.page-header__description br:first-child {
+  display: none;
+}
+
 @media screen and (min-width: $tablet-width) {
   .page-header {
     &--index {

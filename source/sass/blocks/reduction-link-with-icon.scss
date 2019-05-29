@@ -1,0 +1,9 @@
+.reduction-link-with-icon:hover svg,
+.reduction-link-with-icon:focus svg {
+  opacity: 1;
+  fill: #63d1bb;
+}
+
+.reduction-link-with-icon:active svg {
+  opacity: 0.3;
+}

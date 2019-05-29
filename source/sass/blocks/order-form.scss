@@ -1,4 +1,3 @@
-
 .order-form {
   margin: 0 30px;
   overflow: hidden;
@@ -10,7 +9,7 @@
 .order-form__group {
   position: relative;
   margin: 0;
-  margin-bottom: 44px - 12px;
+  margin-bottom: 30px;
   padding: 0;
   border: none;
   border-top: 1px solid #62d1ba;
@@ -20,12 +19,12 @@
   }
 
   &--contacts {
-    margin-bottom: 34px;
+    margin-bottom: 32px;
     border: none;
   }
 
   &--addition {
-    margin-bottom: 15px;
+    margin-bottom: 17px;
     border: none;
 
     &::before {
@@ -57,11 +56,12 @@
   }
 
   &--person {
-    margin-bottom: 33px;
+    margin-bottom: 28px;
+    padding-top: 2px;
   }
 
   &--contacts {
-    margin-bottom: 14px;
+    margin-bottom: 17px;
   }
 
   &--addition {
@@ -88,7 +88,8 @@
 
 .order-form__item {
   position: relative;
-  margin-bottom: 25px - 12px - 12px;
+  //margin-bottom: 25px - 12px - 12px;
+  margin: 0;
   padding: 0;
 
   &:last-child {
@@ -131,8 +132,8 @@
 
 .order-form__icon-email {
   position: absolute;
-  right: 4px;
-  bottom: 13px;
+  right: 0;
+  bottom: 10px;
   width: 40px;
   height: 30px;
   opacity: 0.2;
@@ -173,7 +174,7 @@
   }
 
   &--person {
-    margin-bottom: 7px;
+    margin-bottom: 10px;
     padding: 0;
   }
 }
@@ -190,7 +191,7 @@
 .order-form__list [type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
-  top: 12px;
+  top: 14px;
   left: 10px;
   display: block;
   width: 20px;
@@ -311,7 +312,7 @@
 
   .order-form__group {
     position: relative;
-    margin-bottom: 66px - 12px;
+    margin-bottom: 57px;
     padding: 0 50px;
     border: none;
 
@@ -321,9 +322,9 @@
     }
 
     &--color {
-      margin-bottom: 65px;
+      margin-bottom: 62px;
       padding-top: 65px - 12px;
-      padding-bottom: 5px + 12px;
+      padding-bottom: 20px;
     }
 
     &--person {
@@ -332,7 +333,7 @@
 
     &--contacts {
       margin-bottom: 50px;
-      padding-top: 65px;
+      padding-top: 62px;
       padding-bottom: 50px;
     }
 
@@ -350,23 +351,24 @@
     width: 150px;
 
     &--type {
-      top: 12px;
+      top: 14px;
     }
 
     &--color {
-      top: 53px + 12px;
+      top: 66px;
     }
 
     &--person {
-      top: 0;
+      top: 6px;
     }
 
     &--contacts {
+      top: 7px;
       left: -167px;
     }
 
     &--addition {
-      top: 15px;
+      top: 18px;
     }
   }
 
@@ -389,7 +391,7 @@
   }
 
   .order-form__item {
-    margin-bottom: 60px - 12px - 12px;
+    margin-bottom: 34px;
 
     &--color {
       width: 220px;
@@ -398,11 +400,11 @@
 
     &--person {
       display: flex;
-      margin-bottom: 40px;
+      margin-bottom: 35px;
     }
 
     &--contacts {
-      margin-bottom: 40px;
+      margin-bottom: 35px;
 
       &::before {
         display: none;
@@ -437,13 +439,15 @@
     &--checkbox {
       &::before {
         top: -5px;
-        width: 48px;
+        width: 49px;
         height: 48px;
       }
     }
 
     &--person {
       margin-right: 25px;
+      margin-bottom: 0;
+      padding-top: 6px;
       padding-left: 0;
     }
   }
@@ -457,8 +461,8 @@
   .order-form__list [type="checkbox"]:checked + label::after {
     top: 10px;
     left: 14px;
-    width: 24px;
-    height: 10px;
+    width: 28px;
+    height: 14px;
   }
 
   .order-form__border {
@@ -467,7 +471,8 @@
 
   .order-form__input {
     padding-top: 0;
-    padding-bottom: 16px;
+    padding-bottom: 14px;
+    padding-left: 16px;
     font: inherit;
     font-weight: 400;
     font-size: 19px;
@@ -485,6 +490,7 @@
   .order-form__addition {
     width: calc(100% - 167px);
     margin-left: 167px;
+    padding: 14px;
     font-size: 19px;
   }
 
@@ -497,7 +503,7 @@
     order: 1;
     margin: 0;
     margin-left: auto;
-    padding-top: 11px;
+    padding-top: 9px;
     padding-left: 20px;
     font-size: 17px;
     line-height: 30px;
@@ -512,6 +518,21 @@
 
 @media screen and (min-width: $desktop-width) {
   .order-form__group {
+    margin-bottom: 55px;
+
+    &--color {
+      margin-bottom: 60px;
+      padding-bottom: 23px;
+    }
+
+    &--person {
+      margin-bottom: 49px;
+    }
+
+    &--contacts {
+      margin-bottom: 50px;
+    }
+
     &--addition {
       width: 1050px;
       margin: 0 auto;
@@ -541,6 +562,12 @@
   .order-form__item {
     &--color {
       width: 243px;
+    }
+  }
+
+  .order-form__label {
+    &--person {
+      padding-top: 4px;
     }
   }
 

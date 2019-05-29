@@ -83,17 +83,21 @@
     &--love {
       order: 1;
       margin-bottom: 56px;
+      padding-top: 56px;
       background-position: 5px 5px;
     }
 
     &--domestic {
       order: 3;
+      padding-top: 54px;
       background-position: -3px 5px;
     }
 
     &--gift {
       order: 5;
       margin-bottom: 60px;
+      padding-top: 52px;
+      background-position: 3px -1px;
     }
   }
 }
